@@ -1,0 +1,885 @@
+.container{
+    flex:1 0 !important;
+    width: 100%; 
+    background-color:  #D3B33E; 
+    padding: 20px
+   
+}
+.bloc {
+    background: white;
+    height: 20rem;
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin-bottom: 20px;
+}
+.bloc .first {
+    height: 12rem;
+    width: 100%;
+    position: absolute;
+    gap: 2px;
+    display: flex;
+    justify-content: center;
+    
+}
+.bloc .second{
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 26.5px;
+}
+.second .delBtn2{
+    width: 100%;
+    height:50px;
+    min-width: 50px;  
+    max-width: 50px; 
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin-right: 4.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #79C241;
+    border: none;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+}
+.second .delBtn{
+    width: 100%;
+    height:50px;
+    min-width: 50px;  
+    max-width: 50px; 
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin-right: 2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    background: rgb(255, 99, 88);
+    border: none;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    
+}
+
+
+.formStyle{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px 0 20px;
+}
+.esclamation{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 30px 0;
+}
+.esclamation i{
+    font-size: 50px;
+    color: #FFC107;
+}
+.Vaccount {
+    padding:0 10px 0 10px;
+    display: flex;
+    justify-content: center !important;
+    flex-direction: column !important;
+}
+.labelIn {
+    text-align: center;
+}
+.Vaccount input{
+    height: 40px;
+    border-radius: 10px;
+    border: 1.5px solid #000000;
+box-sizing: border-box;
+}
+.Vaccount span{
+    cursor: pointer;
+    position: absolute;
+    padding-top: 5px;
+    right: 20px;
+    
+    margin-right:20px ;
+ }
+ .Vaccount span i {
+    color: #000000;
+    font-size: 20px;
+ }
+.VaccountH6{
+    width: auto;
+    font-size: 1.2vmin;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 10px 0;
+}
+.VaccountH68{
+   width: auto;
+}
+.barsearch span{
+    position: absolute;
+    padding-top: 7px;
+    right: 5px;
+    
+    margin-right:20px ;
+ }
+.confirmBtns{
+    gap: 10rem;
+    display: flex;
+    justify-content: center;
+    margin: 25px 0 0 0;
+}
+.confirmBtns .btnleft{
+    width: 100px;
+    height:40px;
+    color: white;
+    background: #FFC107;
+    border: none;
+    border-radius: 55px;
+    font-weight: 500;
+}
+.confirmBtns .btnright{
+    width: 100px;
+    height:40px;
+    border: none;
+    border-radius: 55px;
+    font-weight: 500;
+}
+.loadingS{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.Modal3{
+    position: absolute;
+    width:550px;
+    height:300px;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    bottom: 40px;
+    margin-right:-50% ;
+    background: #FFFF;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    z-index: 999;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+     align-items: center;
+     animation: slide-down 300ms ease-in-out forwards;
+  }
+  @keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(12rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(12);
+    }
+  }
+  .Overlay3{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    
+    z-index: 999;
+  }
+  .errMessageCon{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .topp{
+    text-align: center;
+   width: 100%;
+  }
+  .delIC{
+    margin-bottom: 20px;
+    width:100px;
+    height:100px;
+    background-color:#FFFF;
+    border-radius:100%;
+    line-height:100px;
+    text-align:center;
+    vertical-align:middle;
+    display:inline-block; 
+      background:#C8102E;
+  }
+
+  .delIC i{
+    color: #FFFF;
+    font-size: 25px;
+    line-height: inherit
+  }
+
+  
+  .topp h6{
+      
+    margin-top: 20px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    display: flex;
+
+   
+  }
+  .line {
+    height: 1px;
+    width: 400px;
+    background: rgb(201, 201, 201);
+    margin: 0px 0px 1rem 26px;
+}
+.CbtnCon{
+    display: flex;
+    gap: 100px;
+}
+.btnModal{
+    border: none;
+    height: 30px;
+    width: 100px;
+    color: #FFFF;
+    background: #C8102E;
+    border-radius: 55px;
+    gap: 5px;
+}
+
+.btnModal2{
+    border: none;
+    height: 30px;
+    width: 100px;
+    color: black;
+    background: rgba(196, 196, 196, 0.19);
+    border-radius: 55px;
+    gap: 5px;
+}
+.infos {
+    width: 45%;
+    height: 10rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    /* justify-content: center; */
+}
+.infos .photo{
+     position: relative;
+     display: flex;
+     justify-content: center;
+    
+}
+
+.infos .photo img {
+    border-radius: 50%;
+    border: solid #89C64E 6px;
+    height: 140px;
+    width: 140px;
+    object-fit: cover;
+    object-position: center;
+}
+.infos .photo .editIcon{
+    display: flex;
+    justify-content: center;
+  }
+.editIcon {
+    padding-top: 90px; 
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    color: #FFFF;
+    font-size: 20px;
+    z-index: 2;
+    opacity: 0;  
+  }
+  .trash{
+    cursor: pointer;
+  }
+  .eye{
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  .photo:hover .editIcon{
+    border-radius: 50%;
+    height: 140px;
+    width: 140px;
+    object-fit: cover;
+    object-position: center;
+    background: rgba(126, 196, 64, 0.71);
+    opacity: 1;
+    transition: .5s ease-in-out ;
+  }
+.infos .ident{
+    height: 100%;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.infos .ident p{
+    margin: 0;
+    margin: 0 0 0.5rem 0rem;
+}
+.infos .ident .mail{
+   display: flex;
+    flex-direction: row; 
+}
+
+
+.mail a{
+    font-size:15px;
+    color:black;
+    font-weight: 600;
+}
+.infos .ident .number{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+    
+.number a{
+    font-size:15px;
+    color:black;
+    font-weight: 600;
+}
+.infos .ident svg{
+    margin: 0.2rem 1rem 0 0;
+}
+.details{
+   width: 55%;
+    height: 10rem;
+    padding: 1rem 0rem 1rem 0;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.details .owner{
+
+    text-align: center;
+    vertical-align: center;
+    height: 95%;
+    width: 30%;
+    background-image: linear-gradient(to right, #79C241 , #C8DB26);
+    /* margin: 2rem 2rem 2rem 0; */
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    padding: 1rem;
+}
+.details .drivers{
+    text-align: center;
+    vertical-align: center;
+    height: 95%;
+    width: 30%;
+    background-image: linear-gradient(to right, #79C241 , #C8DB26);
+    /* margin: 2rem 2rem 2rem 0; */
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.details .cars{
+    text-align: center;
+    vertical-align: center;
+    height: 95%;
+    width: 30%;
+    background: rgb(255, 99, 88);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.details h3{
+    color: white;
+}
+.details p{
+    font-size: 1.1rem;
+    margin: 0 0 1rem 0;
+    color: white;
+}
+.bars {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.bars ul{
+    gap: 3rem;
+    width: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin: 1rem 0 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0rem;
+}
+ .bars ul a{
+    width: 100px;
+    height: 30px;
+    text-decoration: none;
+    color: #000;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+    background:#FFFF;
+    border-style: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.bars ul  a:hover{
+    background:#7EC440;
+}
+.bars  a:active,
+.bars  a.active {
+    background:#7EC440;  
+    border-radius: 25px;
+    width: 100px;
+    height: 30px;
+   
+ 
+}
+
+.Modal{
+    position: absolute;
+    width:350px;
+    height:350px;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    bottom: 40px;
+    margin-right:-50% ;
+    background: #FFFF;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    z-index: 999;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display: flex;
+    justify-content: center;
+     align-items: center;
+     flex-direction: column;
+  }
+
+  .Overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+  }
+
+  .Modal2{
+    position: absolute;
+    width:550px;
+    height:350px;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    bottom: 40px;
+    margin-right:-50% ;
+    background: #FFFF;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    z-index: 999;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display: flex;
+    justify-content: center;
+     align-items: center;
+     flex-direction: column;
+  }
+
+  .Overlay2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+  }
+  @media only screen  and (max-width:503px){
+    .bloc {
+        height: 32rem;  
+    }
+    .bloc .second{
+        margin-right: 1.5rem;
+        justify-content: flex-end;
+    }
+    .second .delBtn2{
+        width: 100%;
+        height:50px;
+        min-width: 50px;  
+        max-width: 50px; 
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        margin-right: 0rem;
+        cursor: pointer;
+        border-radius: 5px;
+        background: #79C241;
+        border: none;
+        font-weight: 600;
+        font-size: 1.5rem;
+        color: #FFFFFF;
+    }
+  .first{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .infos {
+        margin-top: 220px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center ;
+        align-items: center;
+        vertical-align:middle;
+        padding: 0;
+    }
+    .photo{
+        margin: 0px ;
+        padding-top: 70px ;
+    }
+    .infos .photo img {
+        height:100px;
+        width: 100px;
+       }
+    .photo:hover .editIcon{
+        height:100px;
+        width: 100px;
+     }
+     .infos .ident{
+         text-align: center;
+        margin: 0rem;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+    
+    }
+   .infos .ident h3{
+       width: 100%;
+    font-size: 30px;
+}
+.editIcon {
+    padding-top: 80px; 
+  }
+.infos .ident p{
+   
+   margin: 0 1rem 1rem 0rem;
+}
+.infos .ident .mail{
+    padding-top: 5px;
+    display: flex;
+   flex-direction: row;
+   
+}
+.details{
+    margin-top: 68px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .bars{
+    padding-top: 10px ;
+    padding-right: 3px ;
+} */
+.bars ul{
+    gap: 1.2rem ;   
+}
+.bars ul a{
+    padding: 0;
+}
+.details .owner{
+    height: 95%;
+    width: 26%;
+}
+
+.details .drivers{
+    height: 95%;
+    width: 26%
+}
+.details .cars{
+    height: 95%;
+    width: 26%
+}
+.details h3{
+    font-size: 1rem;
+    color: white;
+}
+.details p{
+    font-size: 1rem;
+    margin: 0 0 1rem 0;
+    color: white;
+}
+.Modal2{
+    width:340px;
+
+  }
+  .VaccountH68{
+      width: 90%;
+      font-size: 11px;
+      font-weight: 700;
+  }
+  .confirmBtns{
+    gap: 7rem;
+    display: flex;
+    justify-content: center;
+    margin: 25px 0 0 0;
+}
+
+  }
+  @media only screen and (min-width:504px) and (max-width:605px){
+    .bloc {
+        height: 24rem;  
+    }
+    .first{
+       
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    
+    .infos {
+        width: 100%;
+         padding-top: 80px;
+         padding-right: 100px;
+         display: flex;
+         justify-content: start ;
+        margin-right: 2rem;
+         
+        }
+    .photo{
+        margin-left: 0px ;
+        padding-top: 55px ;
+    }
+    .infos .photo img {
+        height: 130px;
+        width: 130px;
+       }
+    .photo:hover .editIcon{
+        height: 130px;
+        width: 130px;
+     }
+   .infos .ident h3{
+       width: 100%;
+    font-size: 30px;
+}
+.editIcon {
+    padding-top: 80px; 
+  }
+.infos .ident p{
+   margin: 0;
+   margin: 0 0 0.5rem 0rem;
+}
+.infos .ident .mail{
+    padding-top: 5px;
+    display: flex;
+   flex-direction: row;
+   
+}
+.details{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloc .second{
+    margin-right: 0.5rem;
+    justify-content: flex-end;
+}
+.second .delBtn2{
+    margin-right: 0rem;
+}
+.Modal3{
+    width:350px;
+  }
+  .line {
+    height: 1px;
+    width: 300px;
+    background: rgb(201, 201, 201);
+    margin: 0px 0px 1rem 0px;
+}
+.Modal2{
+    width:380px;
+  }
+  }
+  @media only screen and (min-width:606px) and (max-width:889px){
+    .bloc {
+        height: 24rem;  
+    }
+    .first{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .infos {
+    width: 100%;
+     padding-top: 80px;
+     padding-right: 90px;
+     display: flex;
+     justify-content: start ;
+    }
+    .photo{
+        margin: 0px ;
+        padding-top: 55px ;
+    }
+    .infos .photo img {
+        height: 130px;
+        width: 130px;
+       }
+    .photo:hover .editIcon{
+        height: 130px;
+        width: 130px;
+     }
+   .infos .ident h3{
+       width: 100%;
+    font-size: 30px;
+}
+.editIcon {
+    padding-top: 80px; 
+  }
+  .infos .ident{
+   
+    padding:0rem 1rem   1rem;
+   
+
+}
+.infos .ident p{
+   margin: 0;
+   margin: 0 0 0.5rem 0rem;
+}
+.infos .ident .mail{
+    padding-top: 0px;
+    display: flex;
+   flex-direction: row;
+   
+}
+.details{
+    width: 100%;
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bars{
+    padding-top: 100px ;
+    padding-right: 35px ;
+}
+.mail a{
+    font-size:20px;
+    color:black;
+    font-weight: 600;
+}
+
+.number a{
+    font-size:20px;
+    color:black;
+    font-weight: 600;
+}
+
+.second .delBtn2{ 
+    margin-right: 1.1rem;
+}
+  }
+ 
+  @media only screen  and (min-width:883px)  and (max-width:985px){
+    .infos {
+        margin-left: 1rem;
+    }
+    .infos .ident{
+        margin: 0rem;
+    }
+    .infos .photo img {
+        height: 130px;
+        width: 130px;
+       }
+       .photo:hover .editIcon{
+        height: 130px;
+        width: 130px;
+     }
+   .number a{
+    font-size:13px;
+}
+.mail a{
+    font-size:13px;  
+}
+.second .delBtn2{ 
+    margin-right: 2rem;
+}
+}
+  @media only screen   and (min-width:986px) and (max-width:1216px) {
+    .infos {
+        margin-left: 2rem;
+    }
+    .infos .ident{
+        margin: 0rem;
+    }
+   .infos .photo img {
+    height: 130px;
+    width: 130px;
+   }
+   .infos .photo .editIcon{
+       display: flex;
+       justify-content: center;
+     }
+   .editIcon {
+       padding-top: 60px; 
+     }
+     
+     .photo:hover .editIcon{
+        height: 130px;
+        width: 130px;
+     }
+     .infos .ident h3{
+         font-size: 25px;
+    }
+
+     .infos .ident p{
+        margin: 0;
+        margin: 0 0 0.5rem 0rem;
+    }
+    .infos .ident .mail{
+       display: flex;
+        flex-direction: row;
+        
+    }
+    .mailIcon{
+        font-size: 20px !important;
+    }
+    .second .delBtn2{ 
+        margin-right: 2.5rem;
+    }
+        
+}

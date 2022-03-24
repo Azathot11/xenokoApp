@@ -1,0 +1,123 @@
+.container{
+    flex:1 0 !important;
+    width: 100% ;
+    background-color:  #D3B33E; 
+    padding: 20px
+   
+}
+.numberOfChauffeurs{
+  color: #ffff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 27px;
+}
+
+.Modal{
+    position: absolute;
+    width:550px;
+    height:300px;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    bottom: 40px;
+    margin-right:-50% ;
+    background: #FFFF;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    z-index: 999;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+     align-items: center;
+     animation: slide-down 300ms ease-in-out forwards;
+  }
+  @keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(12rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(12);
+    }
+  }
+  .Overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    
+    z-index: 999;
+  }
+  .errMessageCon{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .topp{
+    text-align: center;
+   width: 100%;
+  }
+  .delIC{
+    margin-bottom: 20px;
+    width:100px;
+    height:100px;
+    background-color:#FFFF;
+    border-radius:100%;
+    line-height:100px;
+    text-align:center;
+    vertical-align:middle;
+    display:inline-block; 
+      background:#C8102E;
+  }
+
+  .delIC i{
+    color: #FFFF;
+    font-size: 25px;
+    line-height: inherit
+  }
+
+  
+  .topp h6{
+      
+    margin-top: 20px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    display: flex;
+
+   
+  }
+  .line {
+    height: 1px;
+    width: 400px;
+    background: rgb(201, 201, 201);
+    margin: 0px 0px 1rem 26px;
+}
+.CbtnCon{
+    display: flex;
+    gap: 100px;
+}
+.btnModal{
+    border: none;
+    height: 30px;
+    width: 100px;
+    color: #FFFF;
+    background: #C8102E;
+    border-radius: 55px;
+    gap: 5px;
+}
+
+.btnModal2{
+    border: none;
+    height: 30px;
+    width: 100px;
+    color: black;
+    background: rgba(196, 196, 196, 0.19);
+    border-radius: 55px;
+    gap: 5px;
+}

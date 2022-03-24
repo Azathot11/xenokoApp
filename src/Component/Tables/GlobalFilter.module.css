@@ -1,0 +1,41 @@
+.sicon{
+    position: relative;
+}
+
+input[type="text"]{
+  padding-left: 25px !important;
+}
+
+
+.sicon span{
+    position: absolute;
+    font-weight: bolder;
+    color:  #7EC440;
+    left:5;
+    font-size: 15px;
+    top:5px;
+    margin-left: 10px;
+    padding-top: 5px;
+   
+} 
+  .searchTerm {
+    width: 100%;
+    border: 2px solid #FFFFFF;
+    padding: 5px;
+    height: 30px;
+    border-radius: 11px;
+    outline: none;
+   
+    background: transparent;
+  }
+  .searchTerm , input::placeholder{
+    color: #000;
+    padding: 20px 0px 20px 10px ; 
+    
+  }
+  
+  .searchTerm:focus{
+    color: #00B4CC ;
+  }
+  
+ 

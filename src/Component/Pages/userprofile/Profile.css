@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+  }
+  .Profile{
+    height: 1000px;
+  }
+  .contain {
+    flex:1 0 !important;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #FFFFFF;
+  }
+  @media (min-width: 1400px){
+      .container, .container-lg, .container-md, .container-sm, .container-xl {
+        /* max-width: 700px; */
+        padding-top: 2rem;
+    }
+  }
+  @media (max-width: 1399px) and (min-width: 1200px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        /* max-width: 600px; */
+        padding-top: 1rem;
+    }
+  }
+  @media (max-width: 1199px) and (min-width: 992px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        /* max-width: 500px; */
+        padding-top: 1rem;
+    }
+  }
+  @media (max-width: 991px) and (min-width: 768px){
+    .container, .container-md, .container-sm {
+        /* max-width: 450px; */
+        padding-top: 1rem;
+    }
+  }
+  
+  .form-control{
+    background-color: #dfdfdf;
+    padding: 0.6rem 0.8rem !important;
+    margin: 0.5rem;
+  }
+  
+  
+  .form-label {
+    color: white;
+    margin-left: 0.5rem;
+  }
+
+  .butn{
+      margin-top: 2rem !important;
+      margin-left: 0.3rem;
+      background-color: #7EC440;
+    border-color: #7EC440;
+  }
+  .butn:hover{
+    background-color: #7EC440 !important;
+    border-color: #7EC440 !important;
+    border-color: #7EC440 !important;
+    box-shadow: none !important;
+     
+  }
+  .change{
+      margin: 0rem !important;
+      padding: 0 !important;
+      background-color: #FFFFFF;
+      margin-bottom:20px !important;
+      animation: slide-down 300ms ease-in-out forwards;
+  }
+  @keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-3rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .chP{
+      margin-top: 2rem;
+      color: #0d6efd;
+      cursor: pointer;
+  }
+  .chP:hover{
+    text-decoration: underline;
+  }
+  .chP.active{
+    text-decoration: underline;
+    color: #803378;
+  }
+  .bsubmit{
+    margin-top: 1.5rem;
+    margin-left: 0.3rem;
+    background-color: #7EC440;
+    border-color: #7EC440;
+  }
+  .bsubmit:hover{
+    background-color: #7EC440;
+    border-color: #7EC440;
+    border-color: #7EC440;
+    box-shadow: none !important;
+  }
+  .IconControl{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  .IconControl span{
+    position: absolute;
+    right: 15px;
+    top: 17px;
+  }
+  .IconControl span i{
+    font-size: 1.4rem;
+    color: black !important;
+    z-index: 1;
+  }
+
+  .profS{
+    height: 250px;
+    width: 250px;
+    margin: 0rem auto;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  .photoDp{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .photoDp img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .editPp{
+    height: 30%;
+    width: 30%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    background-color: #7EC440;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .editPp i{
+    color: #fff;
+    font-size: 1.8rem;
+    margin-left: 8px;
+  }
+
+  .IFlc:focus{
+    outline:none!important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+    border-bottom:solid #6CBE45 4px !important;
+   
+}
+/* .IFlc::placeholder{
+    color:white !important;
+    font-weight:bold!important;
+    font-size: 18px !important;
+} */
+.invalid{
+    border:solid  rgb(228, 74, 74) 4px !important;
+}
+.errorColor{
+  margin-left: 30px;
+    color:rgb(224, 60, 60)
+}
+.Modal{
+  position: absolute;
+  width:350px;
+  height:350px;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  bottom: 40px;
+  margin-right:-50% ;
+  background: #FFFF;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+  z-index: 999;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  display: flex;
+  justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.Overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  
+  z-index: 999;
+}

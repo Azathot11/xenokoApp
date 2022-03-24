@@ -1,0 +1,129 @@
+.logDiv{
+    padding-top: 20px; 
+    width: 100%;
+    position: relative;   
+}
+.navbabarP{
+    padding-top:5rem;
+    margin-left: 20px;
+    display:flex;
+    align-items:center
+}
+
+
+.xI{
+    position:absolute;
+    margin-left: 20px;
+}
+.cI{
+    position:absolute;
+    right: 0;
+    margin-right: 20px;
+}
+.avdiv{
+    position: relative;
+}
+.avdiv .table_avatar{
+    position: absolute;
+z-index: 1;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+   border-radius: 100%;  
+   object-fit: cover;
+   object-position: center;
+ 
+}
+.avdiv .editIcon {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px; 
+    color: #FFFFFF;
+    font-size: 20px;
+    z-index: 2;
+    opacity: 0;
+    
+  }
+  .avdiv:hover .editIcon{
+    width: 70px;
+    height: 70px;
+   border-radius: 100%;  
+    object-fit: cover;
+    object-position: center;
+    background: rgba(126, 196, 64, 0.71);
+    opacity: 1;
+    transition: .5s ease-in-out ;
+  }
+
+.n_E{
+    padding-left: 82px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFF;
+   margin-bottom: 0rem;
+}
+.nE{
+    padding-left: 82px;
+    font-weight: medium;
+    font-size: 18px;
+    color: #FFFF;
+   margin-bottom: 0rem; 
+}
+.dash{
+    padding-top: 3rem ;
+    padding-left: 20px;
+    color: #FFFFFF;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.listItems  a  {
+    width: 75%;
+    padding-left: 20px;
+    display: flex;  
+    align-items: center;
+    cursor: pointer;
+}
+.listItems  a i{
+    color:#FFFFFF;
+    font-weight: bold;
+    font-size: 30px;
+}
+ .steering{
+    color:#FFFFFF;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.listItems  a p{
+   padding-top: 15px;
+    padding-left: 50px;
+    color:#FFFFFF;
+    font-weight: 400;
+    font-size: 20px;
+}
+.listItems  a:active,
+.listItems  a.active {
+    background:rgb(85, 206, 85);
+   border-radius: 25px;
+}
+.listItems  a:hover{
+    width: 75%;
+    background:rgb(85, 206, 85);
+    border-radius: 25px;
+}
+.trash{
+    cursor: pointer;
+  }
+  .eye{
+    cursor: pointer;
+   
+  }
+
+ li {
+    text-decoration:none;
+ }
+ 
+ a{
+    text-decoration:none;
+ }

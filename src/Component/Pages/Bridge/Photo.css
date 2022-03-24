@@ -1,0 +1,89 @@
+._boite{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 17rem;
+    margin: 0.5rem;
+    border-style: none;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 10px;
+    align-items: center;
+}
+._image{
+    height: 10rem;
+    width: 10rem;
+    margin: 1.5rem 1.5rem 0rem 1.5rem;
+    overflow: hidden;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(230, 230, 230);
+    border-radius: 100%;
+}
+._image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+._formM_{
+    height: auto;
+    width: 15rem;
+    overflow: hidden;
+    margin: 1rem 0 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+._formM_ ._submit button {
+    margin: 0 0.3rem;
+    height: 2rem;
+    width: 6rem;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.3rem 0.1rem;
+    background: #C4C4C4;
+}
+._formM_ ._submit button:hover{
+    transition: 0.2s;
+    transform: scale(1.03);
+}
+._submit {
+    width: 40%;
+}
+
+._label_{
+    height: 2rem;
+    width: 6rem;
+    background-color:#7EC440;
+    color: white;
+    display: grid;
+    place-items: center;
+    font-size: 2.5rem ;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+._Labell {
+    width: auto; 
+    height: auto;
+}
+._formM_ ._Labell:hover{
+    transition: 0.2s;
+    transform: scale(1.03);
+}
+._label_ svg{
+    height: 2rem;
+    width: 6rem;
+}
+.spinerPhoto{
+    padding-top:10px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#filee[type="file"] {
+	display: none;
+} 

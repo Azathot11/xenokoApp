@@ -1,0 +1,111 @@
+.form{
+    background: black;
+    width: 350px;
+    height: 1080px;
+    position: absolute;
+    right: 0;
+    z-index: 999;
+}
+
+.title_box{
+    background: white;
+    height: 45px;
+    display: flex;
+}
+
+.title_text{
+    position: absolute;
+    left: 15%;
+    top: 1%;
+}
+.title_text p{
+    margin: 0 0 0 0;
+    font-size: large;
+}
+
+.title_box button{
+    height: 24px;
+    width: 24px;
+    margin: 8px 0px 0px 10px;
+    cursor: pointer;
+}
+
+.personal{
+    color: white;
+}
+.personal p{
+    margin: 25px 0px 3rem 40px;
+}
+
+
+.data_form{
+    color: white;
+    margin-bottom: 9rem;
+}
+.inputs{
+    display: flex;
+    justify-content: center;
+}
+.data_form form label{
+    margin-left: 30px;
+    font-size: 15px;
+}
+.data_form form input{
+    color: black;
+    background: rgb(201, 201, 201);
+    width: 40%;
+    height: 35px;
+    margin: 13px 0px 22px 0px;
+    padding: 5px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-style: solid;
+    border-right: unset;
+    border-color: rgb(201, 201, 201);
+    border-width: 1px;
+    font-family: 'Poppins';
+    cursor: pointer;
+    z-index: 999;
+}
+.name{
+    height: 35px;
+    width: 40%;
+    border-style: solid;
+    border-width: 1px;
+    border-left: unset;
+    border-color: rgb(201, 201, 201);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin: 13px 0px 22px 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.name p{
+    margin: 7px 0px 0px 5px;
+    font-size: 17px;
+    font-family: 'Poppins';
+}
+.line{
+    height: 1px;
+    width: 85%;
+    background: rgb(201, 201, 201);
+    margin: 0px 0px 1.5rem 26px;
+}
+.footer{
+    margin: 0px 2rem 0px 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.footer button{
+    cursor: pointer;
+    width: 60px;
+    height: 30px;
+    background: rgb(201, 201, 201);
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-size: 15px;
+}
+.footer button:focus {
+    outline: none;
+  }

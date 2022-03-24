@@ -1,0 +1,429 @@
+.gen{
+    flex:1 0 !important;
+    width: 100% ;
+    background-color:  #D3B33E; 
+}
+.sec1{
+    display: flex;
+    align-items: center;
+}
+.profileR{
+    display: flex;
+    align-items: center;
+    height: 200px;
+    background-color:#1A1919;
+    margin: 0 !important;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color:#1A1919;
+}
+
+.box{
+    cursor: pointer;
+    width: 270px;
+    height: 150px;
+    background: linear-gradient(90.07deg, #79C241 0.06%, #C8DB26 99.94%, rgba(219, 171, 38, 0) 99.94%);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    border-radius: 15px;
+  
+}
+
+.side{
+ display: flex;
+ justify-content: flex-end;
+ margin-right: 10px !important;
+}
+.bootstrapbutton{
+    
+}
+.selectedH { 
+    display: block;
+    width: 200px;
+    max-width: 200px;
+    height: 50px;
+    margin: 5px 0px;
+    padding: 0px 24px;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #333;
+    background: rgba(219, 171, 38, 0.5);
+    border-radius: 24px;
+    background-image: none;
+    border: 1px solid #eeee;
+    -ms-word-break: normal;
+    word-break: normal;
+
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image:
+    linear-gradient(45deg, transparent 50%, #000 50%),
+    linear-gradient(135deg,  #000 50%, transparent 50%),
+    linear-gradient(to right,  #000,  #000);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+.selectedH:focus{
+    outline: none;
+    border: 1px solid #ccc;
+    background-image:
+      linear-gradient(45deg, #000 50%, transparent 50%),
+      linear-gradient(135deg, transparent 50%, #000 50%),
+      linear-gradient(to right, #000, #ccc);
+    background-position:
+      calc(100% - 15px) 1em,
+      calc(100% - 20px) 1em,
+      calc(100% - 2.5em) 0.5em;
+    background-size:
+      5px 5px,
+      5px 5px,
+      1px 1.5em;
+    background-repeat: no-repeat;
+    border-color:  none;
+    outline: 0;
+}
+.selectedH:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+  }
+.centerbox{
+text-align: center;
+}
+/* .profile .image img{
+    width:70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-left: 30px;
+} */
+ .message p{
+    margin-left: 10px;
+    margin-bottom:0;
+}
+
+.user{
+    margin-top: 10px;
+    width:40px;
+    height:40px;
+    background-color:#FFFF;
+    border-radius:100%;
+    line-height:40px;
+    text-align:center;
+    vertical-align:middle;
+    display:inline-block; 
+}
+
+.user i{
+   color: #D3B33E; 
+   font-size: 25px;
+   line-height: inherit
+}
+.user1{
+    margin-top: 10px;
+    width:40px;
+    height:40px;
+    background-color:#FFFF;
+    border-radius:100%;
+    line-height:30px;
+    text-align:center;
+    vertical-align:middle;
+    display:inline-block; 
+    color: #D3B33E; 
+   font-size: 25px;
+}
+
+
+
+
+ .message .name{
+    font-weight: 900;
+    font-size: 30px ;
+    line-height: 54px;    
+    color: #EEEEEE;
+    
+}
+.message .notification{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px ;
+    line-height: 27px; 
+    color: #94A3B8;  
+}
+
+ .message .notification span{
+  margin-right: 5px;
+   
+}
+.sizing{
+    background: linear-gradient(90.07deg, #79C241 0.06%, #C8DB26 99.94%, rgba(219, 171, 38, 0) 99.94%);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 15px !important;
+    cursor: pointer;
+    text-decoration: none !important;
+}
+.NumCards{
+    display:none
+}
+.number{
+    font-weight: bold;
+    font-size: 38px;
+    color: #FFFFFF;
+}
+.total{
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF; 
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    font-size:25px ;
+    color: #D3B33E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.details{
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+.arrows{
+    margin-left:5px;
+    font-size: 25px;
+    color: #FFFFFF;
+}
+.search{
+    width: 100%;
+    padding-left: 20px;
+    background: rgba(196, 196, 196, 0.2);
+    border-radius: 23.5px;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.barsearch span{
+   position: absolute;
+   padding-top: 7px;
+   right: 5px;
+   
+   margin-right:20px ;
+}
+
+.ranking li{
+    display: flex;
+    justify-content: space-between;
+}
+.hmonths{
+    padding: 0 18px 0 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carD{
+   
+    max-height: 35rem ;
+    overflow-y: scroll;
+    overflow-x: hidden !important;
+}
+    @media only screen  and (max-width:576px) {
+        .profileR{
+            height: 315px;
+             display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        .profile{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+         .message .name{
+             text-align: center;
+            font-weight: 900;
+            font-size: 40px ;
+            line-height: 70px;    
+            color: #EEEEEE;
+            
+        }
+        .message .notification{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 27px; 
+            color: #94A3B8;  
+        }
+        
+         .message .notification span{
+          margin-right: 5px;
+           
+        }
+        .DprofileR {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 20px;
+        }
+        
+        .box{
+            display: flex;
+            justify-content: center;
+                width: 150px;
+                height: 150px;
+                border: 1px solid rgba(0, 0, 0, 0.15);
+                box-sizing: border-box;
+                border-radius: 15px;
+                
+        }
+        .carD{
+            margin-top: 10px;
+        }
+    }
+    @media only screen   and (min-width:577px) and (max-width:745px) {
+        .message .name{
+            text-align: center;   
+            font-size: 14px ; 
+            line-height: 30px;   
+        }
+        .message .notification{
+            text-align: center;
+            font-size: 14px;
+        }
+        
+        .DprofileR {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .box{
+                width: 160px;
+                height: 150px;
+                border: 1px solid rgba(0, 0, 0, 0.15);
+                box-sizing: border-box;
+                border-radius: 15px;
+        }
+        .carD{
+            margin-top: 10px;
+        }
+    }
+    
+    @media only screen and (min-width: 746px) and  (max-width:991px) {
+       
+            .message .name{
+                text-align: center;   
+                font-size: 15px; 
+                line-height: 25px;
+            }
+            .message .notification{
+                text-align: center;
+                font-size: 15px;
+            }
+            
+            .DprofileR .box{
+                    width: 170px;
+                    height: 150px;
+                    border: 1px solid rgba(0, 0, 0, 0.15);
+                    box-sizing: border-box;
+                    border-radius: 15px;
+            }
+            .carD{
+                margin-top: 10px;
+            }
+    }
+    @media only screen and (min-width: 992px) and (max-width:1250px) {
+          
+         .message .name{
+            text-align: center;   
+            font-size: 20px; 
+        }
+        .message .notification{
+            text-align: center;
+            font-size: 15px;
+        }
+        
+        .DprofileR .box{
+                width: 170px;
+                height: 150px;
+                border: 1px solid rgba(0, 0, 0, 0.15);
+                box-sizing: border-box;
+                border-radius: 15px;
+        }
+    }
+    @media only screen and (min-width: 1251px) and (max-width:1470px) {
+  
+        .DprofileR .box{
+            width: 250px;
+            height: 150px;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            box-sizing: border-box;
+            border-radius: 15px;
+    }
+            .message .name{
+                text-align: center;   
+                font-size: 25px; 
+            }
+            .message .notification{
+                text-align: center;
+                font-size: 15px;
+            }
+            
+            .DprofileR .box{
+                    width: 170px;
+                    height: 150px;
+                    border: 1px solid rgba(0, 0, 0, 0.15);
+                    box-sizing: border-box;
+                    border-radius: 15px;
+            }
+     
+      }
+      /* @media only screen and (min-width:1556px) {
+  
+        .DprofileR .box{
+            width: 200px;
+            height: 150px;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            box-sizing: border-box;
+            border-radius: 15px;
+    }
+            .message .name{
+                text-align: center;   
+                font-size: 25px; 
+            }
+            .message .notification{
+                text-align: center;
+                font-size: 15px;
+            }
+            
+            .DprofileR .box{
+                    width: 250px;
+                    height: 150px;
+                    border: 1px solid rgba(0, 0, 0, 0.15);
+                    box-sizing: border-box;
+                    border-radius: 15px;
+            }
+     
+      } */
+    
+    
+    

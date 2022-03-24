@@ -1,0 +1,189 @@
+.form{
+    overflow-y: scroll;
+    overflow-x: hidden !important;
+    background: black;
+    width: 350px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    animation: slide-down 300ms ease-in-out forwards;
+    z-index: 999;
+}
+.previewImages{
+    width:270px;
+    height: 200px;
+}
+
+@keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-3rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+.title_box{
+    background: white;
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.title_text{
+    position: absolute;
+    left: 15%;
+   
+}
+.title_text p{
+    margin: 0 0 0 0;
+    font-size: large;
+}
+
+.title_box .faicon{
+    height: 24px;
+    width: 24px;
+    margin: 0px 8px 0px 10px;
+    cursor: pointer;
+}
+
+.personal{
+    color: white;
+}
+.personal p{
+    margin: 25px 0px 3rem 40px;
+}
+
+
+.doc input{
+    width: 80%;
+    margin: 1rem 2rem;
+    height: 35px;
+    background: black;
+    color: rgb(201, 201, 201);
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(201, 201, 201);
+    border-radius: 8px;
+}
+
+.data_form{
+    color: white;
+    margin-bottom: 0rem;
+}
+.data_form button{
+    background: rgb(201, 201, 201);
+    color: black;
+    padding: 0.2rem 1rem;
+    border-radius: 8px;
+    margin: 0.8rem 3rem 3rem 3rem;
+    cursor: pointer;
+}
+.inputs{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+.doc input {
+    background: black;
+}
+.data_form form label{
+    margin-left: 30px;
+    font-size: 15px;
+}
+.inputs input{
+   width: 80%;
+   border-radius: 8px;
+   border-style:solid;
+   border-width: 1px;
+   cursor: pointer;
+}
+.name{
+    height: 35px;
+    width: 40%;
+    border-style: solid;
+    border-width: 1px;
+    border-left: unset;
+    border-color: rgb(201, 201, 201);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin: 13px 0px 22px 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.name p{
+    margin: 7px 0px 0px 5px;
+    font-size: 17px;
+    font-family: 'Poppins';
+}
+
+.assurance {
+    display: flex;
+    margin: 1rem 2rem;
+    margin-top: 3rem;
+    margin-bottom: 12rem;
+}
+.assurance .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.assurance .card .image {
+    height: 4rem;
+    width: 6rem;
+    background: rgb(201, 201, 201);
+    margin: 0 1rem;
+}
+.assurance .card p{
+    margin: 0 0;
+    font-size: 13px;
+}
+.assurance .delete{
+    display: flex;
+    align-items: center;
+    
+}
+.assurance .delete button{
+    margin: 0 0;
+    padding: 0 0;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+}
+
+.line{
+    height: 1px;
+    width: 85%;
+    background: rgb(201, 201, 201);
+    margin: 0px 0px 1.5rem 26px;
+}
+.spine{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footer button{
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+    background: rgb(201, 201, 201);
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-size: 15px;
+}
+.footer button:focus {
+    outline: none;
+  }
+
+
+  

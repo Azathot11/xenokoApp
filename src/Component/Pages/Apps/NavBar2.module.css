@@ -1,0 +1,77 @@
+.navi {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+  }
+ 
+  .left2 {
+      
+      display: flex;
+      align-items: center;
+  }
+  /* .nav2logo{
+    width: 40px;
+    height: 40px;
+  } */
+  .left2 .nav2logo{
+    width: 40px;
+    height: 40px;
+    margin-left: 23px;
+     
+  }
+  
+  
+  .right2 {
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+      gap: 2rem;
+      font-size: 18px;
+  }
+  .logo{
+      display: flex;
+     
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: rgba(196, 196, 196, 0.2);
+  }
+  .eng {
+      max-width: 30px;
+      height: 20px;
+  }
+  
+  .right2 .table_avatar{
+      cursor: pointer;
+  }
+  @media only screen and  (max-width:980px) {
+      .left{
+          display: none;
+      }
+      .left2{
+          display: flex;
+          align-items:center;
+      }
+      .left2 .burger{
+          cursor: pointer;
+          color:#81C53F ;
+          font-size: 30px;
+          font-weight: bolder;
+          display: block;
+          padding-left: 7px;
+      }
+      .navBar .sectio-1 .pageName{
+          color: #000;
+          
+      }  
+         
+  }

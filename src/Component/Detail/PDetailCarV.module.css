@@ -1,0 +1,139 @@
+
+  
+  
+.table_wrapperv{
+    /* margin: 10px 70px 70px; */
+    border-top-left-radius:  5px;
+    border-top-right-radius: 5px ;
+    background: #FFFF;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+    overflow-X: auto;
+}
+
+
+.Tempty{
+  font-weight: bolder;  
+}
+
+
+.fl_tableV {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    white-space: nowrap;
+    background-color: white;
+    table-layout: auto
+}
+.searchRow{
+    background-color: #ddd !important;
+}
+.linkC{
+    cursor: pointer;
+}
+
+.fl_tableV td, .fl_tableV th {
+    text-align: center;
+    padding: 8px;
+}
+
+.fl_tableV td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 15px;
+    color: black;
+}
+.fl_tableV td a {
+    color: black;
+}
+
+.iconsV {
+    margin-top:4px ;
+    border-bottom: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap:1.5rem;
+}
+.eyeV{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(64, 172, 196, 0.47);
+    border-radius: 50%;
+    width: 40px;
+    height:40px;
+    padding-top:3px ;
+    cursor: pointer;
+}
+
+.pencilV{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    color: #FFFF;
+    background: #7EC440;
+    border-radius: 50%;
+    width: 40px;
+    height:40px;
+    padding-top:3px ;
+    cursor: pointer;
+}
+
+.trashV{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    color: #FFFF;
+    background: #C8102E;
+    border-radius: 50%;
+    width: 40px;
+    height:40px; cursor: pointer;
+    padding-top:3px ;
+
+}
+
+.docV{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    color: #FFFF;
+    background: rgba(64, 172, 196, 0.47);
+    border-radius: 50%;
+    width: 40px;
+    height:40px;
+    padding-top:3px ;
+    cursor: pointer;
+}
+
+.fl_tableV tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+/* Responsive */
+
+@media (max-width: 568px) {
+    .fl_tableV > thead > tr>th:nth-child(3) {
+        display: none;
+     }
+     
+     .fl_tableV > tbody > tr > td:nth-child(3) {
+       display: none;
+    }
+    .firstColumnv{
+        display: none;
+    }
+    
+    .fl_tableV > thead > tr>th:nth-child(4) {
+        display: none;
+     }
+     .fl_tableV > tbody > tr > td:nth-child(4) {
+        display: none;
+     }
+    
+}
+

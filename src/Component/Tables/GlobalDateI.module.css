@@ -1,0 +1,44 @@
+.siconI{
+    position: relative;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 2px;
+ 
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 24 24"><path fill="%23bbbbbb" d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z"/></svg>');
+}
+
+.siconI span{
+    position: absolute;
+    font-weight: bolder;
+    color:  #7EC440;
+    left:5;
+    font-size: 15px;
+    top:5px;
+    margin-left: 10px;
+    padding-top: 5px;
+   
+} 
+  .searchTermI {
+    width: 100%;
+    border: 2px solid #FFFFFF;
+    padding: 5px;
+    height: 30px;
+    border-radius: 11px;
+    outline: none;
+   
+    background: transparent;
+    
+  }
+  .searchTermI , input::placeholder{
+    color: #000;
+    padding: 20px 0px 20px 10px ; 
+    
+  }
+  
+ 

@@ -1,0 +1,190 @@
+.table_wrapperDD{
+  display:flex ;
+  justify-content: center;
+}
+.contanTT{
+    background: #FFFF;
+    width: 700px;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    table-layout: auto
+}
+.contanTT table td{
+   text-align: center;
+}
+.contanTTable tr:hover{
+    background: none;
+}
+.contanTT img{
+    max-width: 50px;
+    height: 50px;
+}
+.Tempty{
+    text-align: center;
+}
+
+.contanTT td {
+    text-align: center;
+    vertical-align: middle;
+  }
+  .trashish{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    color: #FFFF;
+    background: #C8102E;
+    border-radius: 100%;
+    width: 40px;
+    height:40px; cursor: pointer;
+    padding-top:3px ;
+
+}
+.trashish i {
+  color: #FFFF !important;
+  font-size: 15px !important;
+}
+
+  .contanTT td span i{
+      cursor: pointer;
+      font-size: 30px;
+      color: crimson;
+  }
+
+  .Modal2{
+    position: absolute;
+    width:550px;
+    height:300px;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    bottom: 40px;
+    margin-right:-50% ;
+    background: #FFFF;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    z-index: 999;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+     align-items: center;
+     animation: slide-down 300ms ease-in-out forwards;
+  }
+  
+  @keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(12rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(12);
+    }
+  }
+  .Overlay2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    
+    z-index: 999;
+  }
+
+  .errMessageCon{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .topp{
+    text-align: center;
+   width: 100%;
+  }
+  .delIC{
+    margin-bottom: 20px;
+    width:100px;
+    height:100px;
+    background-color:#FFFF;
+    border-radius:100%;
+    line-height:100px;
+    text-align:center;
+    vertical-align:middle;
+    display:inline-block; 
+      background:#C8102E;
+  }
+
+  .delIC i{
+    color: #FFFF;
+    font-size: 25px;
+    line-height: inherit
+  }
+
+  
+  .topp h6{
+      
+    margin-top: 20px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    display: flex;
+
+   
+  }
+  .line {
+    height: 1px;
+    width: 400px;
+    background: rgb(201, 201, 201);
+    margin: 0px 0px 1rem 26px;
+}
+.CbtnCon{
+    display: flex;
+    gap: 100px;
+}
+.btnModal{
+    border: none;
+    height: 30px;
+    width: 100px;
+    color: #FFFF;
+    background: #C8102E;
+    border-radius: 55px;
+    gap: 5px;
+}
+
+.btnModal2{
+    border: none;
+    height: 30px;
+    width: 100px;
+    color: black;
+    background: rgba(196, 196, 196, 0.19);
+    border-radius: 55px;
+    gap: 5px;
+}
+
+.coloo{
+  background: #FFFF;
+}
+
+@media only screen and  (max-width: 484px) {
+  .table_wrapperDD{
+    overflow-X: auto;
+  }
+  .contanTT{
+    min-width:30%;
+  
+}
+.contanTT img{
+  max-width: 25px;
+  height: 25px;
+}
+}
+
+@media only screen and  (min-width: 485px) and (max-width: 800px) {
+  .contanTT{
+    width:90%;
+}
+.table_wrapperDD{
+  overflow-X: hidden !important;;
+}
+}

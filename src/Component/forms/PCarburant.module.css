@@ -1,0 +1,16 @@
+._formm{
+    position: relative;
+}
+
+._formm button{
+    position: absolute;
+    top: 2%;
+    right: -13%;
+    cursor: pointer;
+    background: unset;
+    border-style: none;
+}
+._formm button svg{
+    color: white;
+    
+}

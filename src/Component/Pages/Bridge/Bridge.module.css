@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+  
+  ul{
+    padding: 0;
+    margin: 0;
+  }
+  li{
+    list-style: none;
+  }
+  body{
+    background-color: #eee;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .pages-container {
+    display:flex !important;
+    flex-direction: column !important;
+    height: 100% ;
+    margin-left: 250px;
+    transition:  margin-left .2s ease-in;
+  }
+  .pages-container.inactive{
+    margin-left: 80px;
+  }
+  
+  
+  .left {
+    height: 100%;
+    background-color: lightseagreen;
+    color: white;
+    /* width: 500px; */
+    width: 250px;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .body {
+    flex: 1 1 auto;
+    height: 100%;
+   
+  }
+  
+  .Modal{
+    position: absolute;
+    width:350px;
+    height:350px;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    bottom: 40px;
+    margin-right:-50% ;
+    background: #FFFF;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    z-index: 999;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display: flex;
+    justify-content: center;
+     align-items: center;
+     flex-direction: column;
+  }
+
+/* .pimages img{
+  background: grey;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+   } */
+
+  .contentM form{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .Overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    
+    z-index: 999;
+  }
+ 
+  @media only screen and (max-width:979px){
+  
+
+  .pages-container{
+    margin-left: 0;
+  }
+  .pages-container.inactive{
+    margin-left: 0px;
+  }
+  .SideBar-p{
+    display: none;
+  }
+  }
+  @media only screen and (max-width:980px){
+
+    .pages-container{
+      margin-left:0px; 
+     
+    }
+    } 
+    @media only screen and (min-width: 981px) and (max-width:1250px) {
+      .pages-container{
+        margin-left:190px; 
+      }
+    }
+
+    

@@ -1,0 +1,288 @@
+
+.table_wrapperL{
+    /* margin: 10px 70px 70px; */
+    border-top-left-radius:  5px;
+    border-top-right-radius: 5px ;
+    background: #FFFF;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+    overflow-X: auto;
+}
+.trpL{
+    cursor: pointer;
+}
+.TemptyL{
+  font-weight: bolder;  
+}
+.fl_tableL {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    white-space: nowrap;
+    background-color: white;
+    table-layout: auto
+}
+.searchRowL{
+    background-color: #ddd !important;
+}
+
+.fl_tableL td, .fl_tableL th {
+    text-align: center;
+    padding: 8px;
+}
+
+.fl_tableL td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 15px;
+    color: black;
+}
+.fl_tableL td a {
+    color: black;
+}
+
+.iconsL {
+    margin-top:4px ;
+    border-bottom: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap:1.5rem;
+}
+.eyeL{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(64, 172, 196, 0.47);
+    border-radius: 50%;
+    width: 40px;
+    height:40px;
+    padding-top:3px ;
+    cursor: pointer;
+}
+
+.pencilL{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    color: #FFFF;
+    background: #7EC440;
+    border-radius: 50%;
+    width: 40px;
+    height:40px;
+    padding-top:3px ;
+    cursor: pointer;
+}
+
+.trashL{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    color: #FFFF;
+    background: #C8102E;
+    border-radius: 50%;
+    width: 40px;
+    height:40px; cursor: pointer;
+    padding-top:3px ;
+
+}
+
+.docL{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    color: #FFFF;
+    background: rgba(64, 172, 196, 0.47);
+    border-radius: 50%;
+    width: 40px;
+    height:40px;
+    padding-top:3px ;
+    cursor: pointer;
+}
+
+.fl_tableL tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+/* Responsive */
+
+@media (max-width: 568px) {
+    
+/* 
+    .fl_tableL  > thead > tr>th:nth-child(3) {
+        display: none;
+      }
+      .fl_tableL  > thead > tr>th:nth-child(4) {
+        display: none;
+      }
+      .fl_tableL > tbody > tr > td:nth-child(4) {
+        display: none;
+     }
+    
+     */
+   
+     .firstColumnL{
+         display: none;
+     }
+
+    
+    /* .iconsL {
+        margin-top:4px ;
+        border-bottom: none;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        gap:1.5rem;
+    }
+
+    .eyeL{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(64, 172, 196, 0.47);
+        border-radius: 50%;
+        width: 30px;
+        height:30px;
+        padding-top:3px ;
+    }
+    
+    .pencilL{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 900;
+        color: #FFFF;
+        background: #7EC440;
+        border-radius: 50%;
+        width: 30px;
+        height:30px;
+        padding-top:3px ;
+        cursor: pointer;
+    }
+    
+    .trashL{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 900;
+        color: #FFFF;
+        background: #C8102E;
+        border-radius: 50%;
+        width: 30px;
+        height:30px;
+        padding-top:3px ;
+        cursor: pointer;
+    }
+    .docL{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 900;
+        color: #FFFF;
+        background: rgba(64, 172, 196, 0.47);
+        width: 30px;
+        height:30px;
+        padding-top:3px ;
+        padding-top:3px ;
+        cursor: pointer;
+    } */
+    
+    
+}
+
+@media only screen and (min-width: 569px) and (max-width:819px) {
+   
+ 
+/*      
+    .fl_tableL > thead > tr>th:nth-child(4) {
+        display: none;
+     }
+     .fl_tableL > tbody > tr > td:nth-child(4) {
+       display: none;
+    } */
+    /* .iconsL {
+        margin-top:5px ;
+        gap:5px;
+    }.iconsL {
+        margin-top:4px ;
+        border-bottom: none;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        gap:1.5rem;
+    }
+    .eyeL{
+        font-size: 12px;
+        background: rgba(64, 172, 196, 0.47);
+        border-radius: 50%;
+        width: 50px;
+        height:30px;
+        padding-top:2px ;
+    }
+    
+    .pencilL{
+       
+        border-radius: 50%;
+        width: 10px;
+        height:30px;
+        padding-top:2px ;
+    }
+    
+    .trashL{
+        width: 10px;
+        height:30px;
+        padding-top:2px ;;
+    }
+    .docL{
+        background: rgba(64, 172, 196, 0.47);
+        width:10px;
+        height:30px;
+        padding-top:3px ;
+        padding-top:2px ;
+    }
+}
+
+@media only screen and (min-width: 820px) and (max-width:1225px){
+   
+    .iconsL {
+        margin-top:5px ;
+        gap:1rem;
+    }
+    .eye{
+        font-size: 12px;
+        background: rgba(64, 172, 196, 0.47);
+        border-radius: 50%;
+        width: 50px;
+        height:30px;
+        padding-top:2px ;
+    }
+    
+    .pencil{
+       
+        border-radius: 50%;
+        width: 150px;
+        height:30px;
+        padding-top:2px ;
+    }
+    
+    .trash{
+        width: 150px;
+        height:30px;
+        padding-top:2px ;;
+    }
+    .doc{
+        background: rgba(64, 172, 196, 0.47);
+        width:150px;
+        height:30px;
+        padding-top:3px ;
+        padding-top:2px ;
+    } */
+}
+
+
+

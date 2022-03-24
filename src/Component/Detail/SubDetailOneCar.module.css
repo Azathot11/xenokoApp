@@ -1,0 +1,364 @@
+._page{
+    background: #D3B33E;
+}
+._nvbr{
+    width: 100%;
+    display: flex;
+    margin: 1rem 0 0 30rem;
+}
+._nvbr button{
+    color: white;
+    border-style: none;
+    background: none;
+    border-radius: 1rem;
+    padding: 0.3rem 1rem;
+    margin: 0 1.5rem;
+    cursor: pointer;
+}
+
+.active, ._nvbr button:hover{
+    transition: 0.4s;
+    background: #7EC440;
+}
+._box{
+    height: auto;
+    width: 32rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+._gInf{
+    width: 50%;
+    height: 24rem;
+    margin: 0.5rem 0.5rem;
+    background: #fff;
+    border-radius: 1rem;
+    padding: 1.5rem 1.5rem 1.5rem 2rem;
+    box-shadow: 0px 0px 10px #88888888;
+}
+._gInf:hover{
+    transition: 0.5s;
+    transform: scale(1.01);
+    box-shadow: 0px 0px 10px #68686888
+}
+._boxCP{
+    width: 65%;
+    height: auto;
+    margin: 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+._driv{
+    width: 90%;
+    height: auto;
+    margin: 0 0 0.5rem 0;
+    background: #fff;
+    border-radius: 1rem;
+    padding:  1.5rem 0.5rem;
+    box-shadow: 0px 0px 10px #88888888;
+}
+._driv:hover{
+    transition: 0.5s;
+    transform: scale(1.01);
+    box-shadow: 0px 0px 10px #68686888
+}
+._prop{
+    width: 90%;
+    height: 35%;
+    margin: 0.5rem 0 0 0;
+    background: #fff;
+    border-radius: 1rem;
+    padding-top:1.5rem ;
+    padding-left:1.5rem ;
+    box-shadow: 0px 0px 10px #88888888;
+}
+._prop:hover{
+    transition: 0.5s;
+    transform: scale(1.01);
+    box-shadow: 0px 0px 10px #68686888
+}
+.padi{
+    padding: 0 1.5rem 0 0;
+}
+._titleG{
+    display: flex;
+    align-items: center;
+    margin: 0 0 1.4rem 0;
+}
+._titleG p{
+    margin: 0;
+    font-weight: bold;
+}
+._titleG2{
+    display: flex;
+    align-items: center;
+    margin: 0 0 1.4rem 0;
+   
+}
+
+._titleG2 p{
+    margin: 0rem 3rem 0rem 0rem;
+    font-weight: bold;
+}
+._hdr{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0.5rem 0;
+}
+._hdr p{
+    margin: 0 0 10px 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+._txt{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+._txt p{
+    margin: 0;
+    font-weight: normal;
+}
+.voyantactif{
+    height: 15px;
+    width: 15px;
+    border-style: none;
+    background: #4DC650;
+    border-radius: 100%;
+}
+.voyantInactif{
+    height: 15px;
+    width: 15px;
+    border-style: none;
+    background: red;
+    border-radius: 100%;
+}
+.voyantinavtifactif{
+    height: 15px;
+    width: 15px;
+    border-style: none;
+    background: #a7a8a7;
+    border-radius: 100%;
+}
+.locationIco{
+color:  #C8102E;
+}
+u {
+    color: #0d6efd;
+    text-decoration: underline;
+  }
+._titleChauf{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 1.4rem 0;
+}
+._titleChauf p{
+    margin: 0 1rem;
+    font-weight: bold;
+}
+.driv_row{
+    display: flex;
+    align-items: center;
+}
+
+._driv_photo {
+    height: 2.5rem;
+    width: 2.5rem;
+    background: green;
+    border-radius: 100%;
+    overflow: hidden;
+    /* margin-left: 20px; */
+}
+._driv_photo img{
+    object-fit: cover;
+    height: 2.5rem;
+    width: 2.5rem;
+  
+}
+._designations{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    margin-left: 0.5rem;
+}
+.centePC{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 0.3rem 0;
+    width: 90%;
+    height: auto;
+    padding: 0 0.5rem;
+}
+.removeD{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    width:25px;
+    height:25px;
+    border-radius:50px;
+    color: #FFFFFF;
+    background:red;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.removeD i{
+    font-size: 15px;
+}
+
+._designations p{
+    margin: 0.1rem 0;
+    font-size: 12px;
+}
+.bold{
+    margin: 0.1rem 0;
+    font-weight: bold;
+}
+.light{
+    color: grey;
+}
+.editAdd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 30px;
+    background: #7EC440;
+    border: none;
+    border-radius: 11px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 20px 0 20px;
+   
+}
+.centerAE{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.centerAE{
+    display: flex;
+    align-items: center;
+}
+.noD{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.Adriv{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.Adriv h6{
+    font-weight: bold;   
+}
+.Adriv span{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+.formAddC.inactive{
+    display: none;
+}
+.erMessage{
+    color: red;
+    display: flex;
+    justify-content: center;
+}
+.inputFieldd{
+    width: 170px;
+    height: 41px;
+    left: 947px;
+    top: 1137px;
+    margin: 0 1rem;
+    border: 1px solid #A3A3A3;
+    box-sizing: border-box;
+    border-radius: 11px;
+}
+
+.btnAsigne{  
+    margin: 1rem  0.6rem  ;
+}
+.btnAsigne button{
+    width: 185px;
+    height: 41px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 11px;
+}
+
+@media only screen and (max-width: 800px) {
+    ._page{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 75rem;
+        background: #D3B33E;
+        align-items: center;
+    }
+    ._nvbr{
+        width: 100%;
+        display: flex;
+        margin: 1rem 0 0 0rem;
+        justify-content: center;
+    }
+    ._nvbr button{
+        color: white;
+        border-style: none;
+        background: none;
+        border-radius: 1rem;
+        padding: 0.3rem 1rem;
+        margin: 0 0.5rem;
+        cursor: pointer;
+        background: #7EC440;
+        box-shadow: 0px 0px 10px #88888888;
+    }
+    ._box{
+        height: auto;
+        width: 23rem;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0 0 0rem;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    ._gInf{
+        width: 75%;
+        height: 23rem;
+        margin: 0.5rem 0.5rem;
+        background: #fff;
+        border-radius: 1rem;
+        padding: 0.5rem 1.5rem 1.5rem 2rem;
+        box-shadow: 0px 0px 10px #88888888;
+    }
+    ._boxCP{
+        width: 65%;
+        height: auto;
+        margin: 0.5rem 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    ._prop{
+        width: 85%;
+        height: auto;
+        margin: 0.5rem 0 0 0;
+        background: #fff;
+        border-radius: 1rem;
+        padding: 0.5rem;
+        box-shadow: 0px 0px 10px #88888888;
+    }
+}

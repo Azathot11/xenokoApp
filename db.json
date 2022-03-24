@@ -1,0 +1,30 @@
+{
+    "posts": [
+      { "id": 1, "title": "json-server", "author": "typicode" }
+    ],
+    "comments": [
+      { "id": 1, "body": "some comment", "postId": 1 }
+    ],
+    "profile": [
+        { "name": "typicode" }
+    ],
+
+    "proprietor":[ 
+        {"_id":1,"firstName":"paul", "lastName":"Az", "email":"az@gmail.com" ,"telephone":"690313776" ,"date":"02/02/1998"},
+        {"_id":2,"firstName":"nji", "lastName":"Az", "email":"az@gmail.com" ,"telephone":"690313776" ,"date":"02/02/1998"},
+        {"_id":3,"firstName":"Azathot111", "lastName":"Az", "email":"az@gmail.com" ,"telephone":"690313776" ,"date":"02/02/1998"},
+        {"_id":4,"firstName":"pierre", "lastName":"Az", "email":"az@gmail.com" ,"telephone":"690313776" ,"date":"02/02/1998"},
+        {"_id":5,"firstName":"akort", "lastName":"Az", "email":"az@gmail.com" ,"telephone":"690313776" ,"date":"02/02/1998"},
+        {"_id":6,"firstName":"cho", "lastName":"Az", "email":"az@gmail.com" ,"telephone":"690313776" ,"date":"02/02/1998"},
+        {"_id":7,"firstName":"chris", "lastName":"Az", "email":"az@gmail.com" ,"telephone":"690313776" ,"date":"02/02/1998"}
+    ],
+
+    "drivers":[
+      {"_id":1,"fname":"pierre", "lname":"Titch", "email":"pierre@gmail.com" ,"telephone":"670313776","salary":"200000","date":"02/02/1998", "status":"status"}
+    ],
+
+    "cars":[
+      {"_id":1,"immatriculation":"CE8080", "brand":"Toyota", "model":"land cruiser" ," chassis":"6060", "status":"status"}
+    ]
+    
+  }

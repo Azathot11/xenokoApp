@@ -1,0 +1,70 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.dropdown{
+    padding-top: 62px;
+   display: flex;
+   justify-content: flex-end !important;
+   z-index: 999;
+   animation: slide-down 300ms ease-in-out forwards;
+}
+@keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-3rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+.dropdown.disappear{
+ display: none;
+ transition: 0.2s ease-in-out;
+   
+ }
+ 
+.dropdown .subContain{
+    width: 200px;
+    background: #fff;
+    z-index:999;
+    position: fixed;
+}
+.dropdown .subContain  .sec1D .listSec1{
+   display: flex;
+   cursor: pointer;
+   padding-top: 10px;
+   padding-left: 10px;
+  
+    
+}
+.dropdown .subContain  .sec1D .listSec1:hover{
+   background: grey;
+ }
+.subContain  .sec1D .listSec1 .spanl{
+    padding-right:20px;
+}
+.dropdown .subContain  .sec2D  .listSec2{
+    display: flex; 
+    cursor: pointer;
+    padding-left: 10px;
+    
+}
+.dropdown .subContain  .sec2D :hover{
+    background: grey;
+    
+}
+
+.dropdown .subContain    .listSec2 .spanl2{
+    padding-right:20px;
+
+}
+.Hr{
+    margin: 0;
+    width: 100%;
+}

@@ -1,0 +1,385 @@
+._formm{
+    overflow: auto;
+    background: black;
+    width: 350px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    animation: slide-downn 300ms ease-in-out forwards;
+    z-index: 999;
+}
+
+@keyframes slide-downn {
+    from {
+      opacity: 0;
+      transform: translateY(-3rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+._boxP{
+    display: flex;
+    align-items: center;
+    background: white;
+    height: 45px;
+}
+
+.faicon{
+    margin-left: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+._textP{
+    position: absolute;
+    left: 15%;
+    top: 1%;
+}
+.deleteDoc{
+    display: flex;
+    text-align: center;
+    align-items: center;
+   
+}
+.deleteDoc p{
+    align-items: center;
+    color: #FFFF;
+}
+
+
+ ._photo .editIcon{
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .infos {
+    width: 35%;
+    height: 10rem;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0 2rem 3rem;
+}
+.infos .photo{
+     position: relative;
+     display: flex;
+     justify-content: center;   
+}
+
+.infos .photo img {
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    object-position: center;
+}
+.infos .photo .editIcon{
+    display: flex;
+    justify-content: center;
+  }
+.editIcon {
+    padding-top: 80px; 
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    color: #FFFF;
+    font-size: 20px;
+    z-index: 2;
+    opacity: 0;  
+  }
+  .trash{
+    cursor: pointer;
+  }
+  .eye{
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  .photo:hover .editIcon{
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    object-position: center;
+    background: rgba(126, 196, 64, 0.71);
+    opacity: 1;
+    transition: .5s ease-in-out ;
+  }
+  ._dataP i{
+    color: #FFFF;
+  }
+  .Modal{
+    position: absolute;
+    width:350px;
+    height:350px;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    bottom: 40px;
+    margin-right:-50% ;
+    background: #FFFF;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    z-index: 999;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display: flex;
+    justify-content: center;
+     align-items: center;
+     flex-direction: column;
+  }
+
+  .Overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    
+    z-index: 999;
+  }
+._identP p{
+    color: white;
+    font-size: 1.5rem;
+    margin: 2rem 0 0 3rem;
+}
+._identP ._bouton {
+    width: 5rem;
+    padding: 0.5rem 1rem;
+    background: #7EC440;
+    color: #FFFFFF;
+    border-style: none;
+    border-radius: 10px;
+    position: absolute;
+    cursor: pointer;
+    top: 47%;
+    right: 3rem;
+}
+._identP ._bouttonTitul{
+    width: 5rem;
+    padding: 0.3rem 1rem;
+    background: #FFFFFF47;
+    color: #FFFFFF;
+    border-style: none;
+    border-radius: 10px;
+    margin: 1rem 0 0 3rem;
+}
+._lineP{
+    width: 80%;
+    height: 0.5px;
+    background: #FFFFFF47;
+    margin: 0 2rem 2rem 2rem;
+}
+
+._infosP{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 2rem 0;
+}
+
+._dataP{
+  color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 1rem 2rem;
+}
+
+._dataP p{
+    color: white;
+    margin: 0 0 0 2rem;
+}
+._dataP svg{
+    color: white;
+}
+._front1{
+    color:#FFFF;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 1rem;
+    padding-bottom: 10px;
+}
+.docInfo{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0.3rem;
+    height: 2rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.docInfo2{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0.3rem;
+    height: 2rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.docInfo2 p{
+    padding: 0 4px 0 4px;
+    background: crimson;
+    color: #FFF;
+}
+._cardD2{
+    display: flex;
+    flex-direction: row;
+    margin: 0 0.3rem;
+    height: 7rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+._front{
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 1rem;
+}
+._front p{
+    margin: 0.5rem 0;
+    color: white;
+    text-align: center;
+}
+._photoCard{
+    height: 4rem;
+    width: 6rem;
+    background: white;
+    overflow: hidden;
+}
+._photoCard img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.Modal2{
+    position: absolute;
+    width:550px;
+    height:300px;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    bottom: 40px;
+    margin-right:-50% ;
+    background: #FFFF;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    z-index: 999;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+     align-items: center;
+     animation: slide-down 300ms ease-in-out forwards;
+  }
+  
+  @keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(12rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(12);
+    }
+  }
+  .Overlay2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    
+    z-index: 999;
+  }
+
+  .errMessageCon{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .topp{
+    text-align: center;
+   width: 100%;
+  }
+  .delIC{
+    margin-bottom: 20px;
+    width:100px;
+    height:100px;
+    background-color:#FFFF;
+    border-radius:100%;
+    line-height:100px;
+    text-align:center;
+    vertical-align:middle;
+    display:inline-block; 
+      background:#C8102E;
+  }
+
+  .delIC i{
+    color: #FFFF;
+    font-size: 25px;
+    line-height: inherit
+  }
+
+  
+  .topp h6{
+      
+    margin-top: 20px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    display: flex;
+
+   
+  }
+  .line {
+    height: 1px;
+    width: 400px;
+    background: rgb(201, 201, 201);
+    margin: 0px 0px 1rem 26px;
+}
+.CbtnCon{
+    display: flex;
+    gap: 100px;
+}
+.btnModal{
+    border: none;
+    height: 30px;
+    width: 100px;
+    color: #FFFF;
+    background: #C8102E;
+    border-radius: 55px;
+    gap: 5px;
+}
+
+.btnModal2{
+    border: none;
+    height: 30px;
+    width: 100px;
+    color: black;
+    background: rgba(196, 196, 196, 0.19);
+    border-radius: 55px;
+    gap: 5px;
+}
+
+.coloo{
+  background: #FFFF;
+}

@@ -1,0 +1,137 @@
+.form{
+    max-height: 100vh ;
+    background: black;
+    width: 350px;
+    height: 1000px;
+    position: absolute;
+    right: 0;
+    overflow: auto;
+    z-index: 999;
+    overflow: auto;
+    animation: slide-down 300ms ease-in-out forwards;
+}
+@keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-3rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+.xClose{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    margin-left: 10px;
+    cursor:pointer
+}
+.title_box{
+    background: white;
+    height: 45px;
+    display: flex;
+}
+
+.title_text{
+    position: absolute;
+    left: 15%;
+    top: 1%;
+}
+.title_text p{
+    margin: 0 0 0 0;
+    font-size: large;
+}
+
+.title_box button{
+    color: black;
+    border-style: none;
+    background: none;
+    height: 14px;
+    width: 14px;
+    margin: 8px 0px 0px 10px;
+    cursor: pointer;
+    
+}
+.title_box button svg{
+    font-size: 1rem;
+}
+
+.ident{
+    display: flex;
+    flex-direction: column;
+    height: 18rem;
+}
+.photo{
+    width: 8rem;
+    height: 8rem;
+    background: white;
+    margin: 3rem 0 0 3rem;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.photo img{
+    height: 8rem;
+    width: 8rem;
+    object-fit: cover;
+}
+ 
+   
+
+.ident p{
+    color: white;
+    font-size: 1.5rem;
+    margin: 2rem 0 0 2rem;
+}
+.line{
+    width: 80%;
+    height: 0.5px;
+    background: #FFFFFF;
+    margin: 0 2rem 2rem 2rem;
+}
+.infos{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 19rem 0;
+}
+
+.data{
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 1rem 2rem;
+}
+
+.data p{
+    color: white;
+    margin: 0 0 0 2rem;
+}
+.data svg{
+    color: white;
+}
+.cross{
+    padding: 0.5rem 1rem;
+    color: #FFFFFF;
+    border-style: none;
+    border-radius: 10px;
+    position: relative;
+    margin: 0 0 0 2rem;
+    cursor: pointer;
+}
+
+.moveT{
+    padding: 0.5rem 1rem;
+    background: #7EC440;
+    color: #FFFFFF;
+    border-style: none;
+    border-radius: 10px;
+    position: relative;
+    margin: 0 0 0 2rem;
+    cursor: pointer;
+}
+  
+.moveT svg{
+    font-size: 1rem;
+    position: absolute;
+}

@@ -1,0 +1,24 @@
+.addB {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+    height: 30px;
+    background: #7EC440;
+    border: none;
+    border-radius: 11px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 20px 0 20px;
+    font-weight: 600;
+    font-size: 18px;
+   
+  }
+  
+  .addB:hover{
+      background: #7EC440;
+  }
+
+
+    

@@ -1,0 +1,29 @@
+._description{
+    height: 7rem;
+}
+._formm{
+    position: relative;
+}
+._formm button{
+    position: absolute;
+    top: 2%;
+    right: -13%;
+    cursor: pointer;
+    background: unset;
+    border-style: none;
+}
+._formm button svg{
+    color: white;
+    
+}
+._formm ._description{
+    height: 7rem;
+}
+
+._formm textarea{
+    color: white;
+    background-color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="156mm" height="156mm" version="1.1" viewBox="0 0 156 156" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <radialGradient id="radialGradient5957" cx="79022" cy="24547" r="27242" gradientTransform="matrix(.45707 .24823 -.23889 .43988 67955 -12260)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#aec64d" offset="0"/>
+   <stop stop-color="#4dc650" offset="1"/>
+  </radialGradient>
+ </defs>
+ <g transform="matrix(.050776 0 0 .050776 -1266.8 -230.99)">
+  <path transform="matrix(.056134 -.028721 .028721 .056134 20510 7867.2)" d="m105764 44105c35470-11606-46250-53032-34644-17562 11606 35470 53032-46250 17562-34644-35470 11606 46250 53032 34644 17562s-53032 46250-17562 34644z" fill="url(#radialGradient5957)" stroke-width="5"/>
+  <path d="m27256 5677.6a1204.2 1204.2 0 0 0-1179.3 1221.3 1204.2 1204.2 0 0 0 118.93 503.56c153.95-205.56 250.43-538.28 290.53-905.26 100.47 859.56 510.73 1530.4 1227.6 808.11 716.86-722.26 42.991-1127.5-817.3-1221.5 362.38-42.356 691.54-139.25 896.5-291.63a1204.2 1204.2 0 0 0-536.97-114.61z" fill="#fff" opacity=".36859" stroke-width="1.8807"/>
+ </g>
+</svg>

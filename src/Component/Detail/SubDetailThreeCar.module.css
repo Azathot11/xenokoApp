@@ -1,0 +1,16 @@
+.contanT{
+    background: #FFFF;
+    width: 400px;
+    height: 400px;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+@media only screen and  (max-width: 375px) {
+    .contanT{
+        background: #FFFF;
+        width: 300px;
+        height: 300px;
+    }
+  
+  }
+

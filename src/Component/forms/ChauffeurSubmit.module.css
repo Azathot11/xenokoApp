@@ -1,0 +1,267 @@
+.form{
+    background: black;
+    overflow: auto;
+    width: 350px;
+    height: 100vh;
+    max-height: 100%;
+    position: absolute;
+    right: 0;
+    animation: slide-down 300ms ease-in-out forwards;
+    z-index: 999;
+}
+@keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-3rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .title_box{
+    display: flex;
+    align-items: center;
+    background: white;
+    height: 45px;
+}
+.title_box .faicon{
+    margin-left: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.title_text{
+    margin-left: 20px;
+    position: absolute;
+    left: 11%;
+    font-weight: 600;
+    font-size: 22px;
+}
+.title_text p{
+    margin: 0 0 0 0;
+    font-size: large;
+}
+
+.title_box button{
+    height: 24px;
+    width: 24px;
+    margin: 8px 0px 0px 10px;
+    cursor: pointer;
+}
+
+.personal{
+    color: white;
+}
+.personal p{
+    margin: 25px 0px 3rem 40px;
+}
+
+
+.doc input{
+    width: 80%;
+    margin: 2rem 2rem;
+    height: 35px;
+    background: black;
+    color: rgb(201, 201, 201);
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(201, 201, 201);
+    border-radius: 8px;
+}
+
+.data_form{
+    color: white;
+    margin-bottom: 0rem;
+}
+.data_form button{
+    background: rgb(201, 201, 201);
+    color: black;
+    padding: 0.2rem 1rem;
+    border-radius: 8px;
+    margin: 0.8rem 3rem 3rem 3rem;
+    cursor: pointer;
+}
+.inputs{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+.doc input {
+    background: black;
+}
+.data_form form label{
+    margin-left: 30px;
+    font-size: 15px;
+}
+.inputs input{
+    width: 80%;
+   border-radius: 8px;
+   border-style:solid;
+   border-width: 1px;
+   cursor: pointer;
+}
+.name{
+    height: 35px;
+    width: 40%;
+    border-style: solid;
+    border-width: 1px;
+    border-left: unset;
+    border-color: rgb(201, 201, 201);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin: 13px 0px 22px 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.name p{
+    margin: 7px 0px 0px 5px;
+    font-size: 17px;
+    font-family: 'Poppins';
+}
+.assurance2 {
+    display: flex;
+    margin: 1rem 2rem;
+    margin-top: 3rem;
+    margin-bottom: 12rem;
+}
+.assurance {
+    display: flex;
+    margin: 1rem 2rem;
+    margin-top: 3rem;
+    margin-bottom: 12rem;
+}
+
+.assurance .card{
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+.assurance .cardS {
+    text-align: center;
+}
+.assurance .card .image {
+    height: 6rem;
+    width: 7rem;
+    background: rgb(201, 201, 201);
+    margin-left:  1rem;
+}
+.assurance .card p{
+    margin: 0 0;
+    font-size: 13px;
+}
+
+.Load_error{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.Load_error div{
+    display: flex;
+    justify-content: center;
+}
+.assurance .card2{
+    display: flex;
+    
+    justify-content: space-between;
+}
+.assurance .cardS2 {
+    text-align: center;
+}
+.assurance .card2 .image2 {
+    height: 6rem;
+    width: 7rem;
+    background: rgb(201, 201, 201);
+    margin-left:  12px;
+}
+.assurance .card2 p{
+    margin: 0 0;
+    font-size: 13px;
+}
+.assurance .delete{
+    margin-left:5px ;
+    display: flex;
+    align-items: center;
+    
+}
+.assurance .delete button{
+    display: flex;
+    align-items: center;
+    margin: 0 0;
+    padding: 0 0;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+    background:rgb(224, 60, 60);
+    border: none;
+}
+
+.assurance .delete button i{
+  color: #FFFF;
+}
+
+.errMessage{
+    color: red;
+    display: flex;
+    justify-content: center;
+}
+
+.sMessage{
+    color:#7EC440 ;
+    display: flex;
+    justify-content: center;
+}
+.line{
+    height: 1px;
+    width: 85%;
+    background: rgb(201, 201, 201);
+    margin: -150px 0px 1.5rem 26px;
+}
+.footer{
+  
+    display: flex;
+    justify-content: space-between;
+}
+.footer button{
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+    background: rgb(201, 201, 201);
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-size: 15px;
+}
+.footer button:focus {
+    outline: none;
+  }
+
+
+.IFlc:focus{
+    outline: none;
+    border-bottom:solid #6CBE45 4px !important;
+}
+.IFlc::placeholder{
+    color:white !important;
+    font-weight:bold!important;
+    font-size: 18px !important;
+}
+.invalid{
+    border:solid rgb(224, 60, 60) 2px !important;
+    
+}
+.errorColor{
+    
+  margin-left: 30px;
+    color:rgb(224, 60, 60)
+}
+
+@media only screen and (max-width: 569px) {
+    .form{
+        width: 100%;
+    }
+}
