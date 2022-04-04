@@ -15,7 +15,7 @@ import axios from 'axios'
 import { toast } from "react-toastify";
 import Badge from '@mui/material/Badge';
 import {useTranslation} from 'react-i18next'
-
+import Rmodal from "../UI/Rmodal";
 const Cdetail = (props) => {
     const {t} = useTranslation()
     const [detail,setDetail]=useState([])
@@ -27,11 +27,19 @@ const Cdetail = (props) => {
     // const [modalIsopen,setModalIsOpen] = useState(false)
     const [modal2,setModal2]=useState(false)
     const [modal,setModal]=useState(false)
+    const [Pmodal,setPmodal] = useState(false)
+    const [loadpic,setLoadPic] = useState('')
 
     const notify=()=>{
         toast.success('Deleted succesfully',{autoClose:2000})
      }
 
+
+     const loadImageHandler =(value)=>{
+      setPmodal(true)
+       setLoadPic(value)
+
+     }
    
      const ViewDataHandler =useCallback(() => {
    
@@ -108,6 +116,7 @@ const Cdetail = (props) => {
      
     return (
       <div className={classes._formm}>
+        <Rmodal setPmodal={setPmodal} Pmodal={Pmodal} loadpic={loadpic} />
         <Modal
           isOpen={modal}
           onRequestClose={() => setModal(false)}
@@ -167,6 +176,9 @@ const Cdetail = (props) => {
           <div className={classes.photo}>
             {!profile  ?  <img src={Image3} alt="" />: 
               <img
+              onClick ={()=>{
+                loadImageHandler(profile);
+              }}
                 src={" http://xenoko-api.tejiz-dev.de/" + profile}
                 alt=""
               />
@@ -261,7 +273,9 @@ const Cdetail = (props) => {
                 <div className={classes._front}>
                   <div className={classes._photoCard}>
                     <img
-                      src={" http://xenoko-api.tejiz-dev.de/" + x.frontImage} alt=''
+                     style={{cursor:"pointer"}}
+                     onClick={()=>{loadImageHandler(x.frontImage)}}
+                      src={" http://xenoko-api.tejiz-dev.de/" + x.frontImage} alt='' 
                     />
                   </div>
                   <p>Image (front) </p>
@@ -269,6 +283,8 @@ const Cdetail = (props) => {
                 <div className={classes._front}>
                   <div className={classes._photoCard}>
                     <img
+                       style={{cursor:"pointer"}}
+                       onClick={()=>{loadImageHandler(x.backImage)}}
                       src={"  http://xenoko-api.tejiz-dev.de/" + x.backImage} alt=''
                     />
                   </div>
@@ -301,6 +317,8 @@ const Cdetail = (props) => {
                 <div className={classes._front}>
                   <div className={classes._photoCard}>
                     <img
+                    style={{cursor:"pointer"}}
+                       onClick={()=>{ loadImageHandler(x.frontImage)}}
                       src={" http://xenoko-api.tejiz-dev.de/" + x.frontImage} alt=''
                     />
                   </div>
@@ -309,6 +327,8 @@ const Cdetail = (props) => {
                 <div className={classes._front}>
                   <div className={classes._photoCard}>
                     <img
+                     style={{cursor:"pointer"}}
+                     onClick={()=>{loadImageHandler(x.backImage)}}
                       src={"  http://xenoko-api.tejiz-dev.de/" + x.backImage} alt=''
                     />
                   </div>

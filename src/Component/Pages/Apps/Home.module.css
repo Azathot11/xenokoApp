@@ -245,7 +245,7 @@ text-align: center;
 .carD{
    
     max-height: 35rem ;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden !important;
 }
     @media only screen  and (max-width:576px) {

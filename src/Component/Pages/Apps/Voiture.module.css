@@ -91,11 +91,16 @@
 
    
   }
+  .bottom{
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+  }
   .line {
     height: 1px;
     width: 400px;
     background: rgb(201, 201, 201);
-    margin: 0px 0px 1rem 26px;
+    margin: 0px 0px 1rem 0px;
 }
 .CbtnCon{
     display: flex;
@@ -119,4 +124,16 @@
     background: rgba(196, 196, 196, 0.19);
     border-radius: 55px;
     gap: 5px;
+}
+@media only screen and (max-width: 564px){
+  .Modal{
+    width:350px;
+  }
+  .line {
+    height: 1px;
+    width: 300px;
+    background: rgb(201, 201, 201);
+    margin: 0px 0px 1rem 0px;
+}
+  
 }

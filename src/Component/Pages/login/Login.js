@@ -139,7 +139,7 @@ const Login = (props) => {
       
   return (
     <div className="login">
-      <Container className="contain-l">
+      <Container className="contain-l ">
         <Row classs>
           <Col>
             <img
@@ -149,23 +149,23 @@ const Login = (props) => {
             ></img>
           </Col>
         </Row>
-        <Row className="login-row">
+        <Row className="login-row  mx-0  d-flex justify-content-center">
           <Col className="mr-3 hidee">
             <img src={ImageL} alt="login"></img>
           </Col>
           <Col>
             <div>
-              <Row>
+              <Row className=" d-flex justify-content-center">
                 <Col className="d-flex justify-content-center pb-4  ">
                   <h2 className="h2-ll">Welcome</h2>
                 </Col>
               </Row>
-              <Row className="rows-l">
+              <Row className="rows-l  d-flex justify-content-center ">
                 <Col className="d-flex justify-content-center ">
                   <h6 className="h6-l">Login to your account</h6>
                 </Col>
               </Row>
-              <Row className="rows-l">
+              <Row className="rows-l d-flex justify-content-center ">
                 <Col className="hideee d-flex justify-content-center">
                   <img
                     className="img-r"
@@ -174,10 +174,10 @@ const Login = (props) => {
                   ></img>
                 </Col>
               </Row>
-              <Row>
-                <Col className="ml-4">
+              <Row className=" d-flex justify-content-center">
+                <Col className="ml-4 ">
                   <Form onSubmit={formik.handleSubmit}>
-                    <Row className="pb-4">
+                    <Row className="pb-4 d-flex justify-content-center">
                       <Col className="F-g">
                         <Form.Group className="mb-3 input-icon">
                           <Form.Control
@@ -201,7 +201,7 @@ const Login = (props) => {
                         </Form.Group>
                       </Col>
                     </Row>
-                    <Row className="pb-4">
+                    <Row className="pb-4 d-flex justify-content-center">
                       <Col className="F-g">
                         <Form.Group className="mb-3 input-icon ">
                           <Form.Control
@@ -227,7 +227,7 @@ const Login = (props) => {
                         </Form.Group>
                       </Col>
                     </Row>
-                    <Row>
+                    <Row className="d-flex justify-content-center">
                       <Col className="p-do">
                         <Form.Group
                           className="mb-3"

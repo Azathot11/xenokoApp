@@ -7,6 +7,7 @@ import {MdAccountCircle} from "react-icons/md";
 import { GiPositionMarker } from "react-icons/gi";
 import classes from "./PropDetails2.module.css";
 import { ImCross } from "react-icons/im";
+import RM
 import img from "./images/i.png";
 
 const CDetail = () =>{

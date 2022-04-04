@@ -7,9 +7,10 @@ import axios from "axios";
 import GlobalFilter from "./GlobalFilter";
 import { useTranslation } from "react-i18next";
 import useWindowDimensions from "../Pages/Bridge/Dimensions";
+import Pagination from '@mui/material/Pagination';
+import Stack from '@mui/material/Stack';
 
-
-const TabR = ({ headers,rev,trig,view,del,handleChange2,simm,ssCh,handleChange3}) => {
+const TabR = ({ headers,rev,trig,view,del,handleChange2,simm,ssCh,handleChange3,handlePageClick,handlePageClick2}) => {
     const {t}=useTranslation();
     const AuthCtx=useContext( AuthContext)
     const [show,setShow]=useState(false)
@@ -27,7 +28,6 @@ let colSpanSIZE = 4
 if(width < 548){
   colSpanSIZE= 6
 }
-      const handlePageClick = () => {};
     return (
         <>
            <div className={classes.reseting}>
@@ -94,7 +94,12 @@ if(width < 548){
                 </table>
 
                </div>
-                <ReactPaginate
+               {!show ? <Stack spacing={2} direction="column" alignItems="end" >
+          <Pagination count={10} size="large"  onChange={handlePageClick} />
+        </Stack> :<Stack spacing={2} direction="column" alignItems="end" >
+          <Pagination count={10} size="large"  onChange={handlePageClick2} />
+        </Stack>}
+                {/* <ReactPaginate
                 previousLabel={"previous"}
                 nextLabel={"next"}
                 breakLabel={"..."}
@@ -112,7 +117,7 @@ if(width < 548){
                 breakClassName={"page-item"}
                 breakLinkClassName={"page-link"}
                 activeClassName={"active"}
-                />
+                /> */}
                 </div> 
         </>
     )

@@ -16,8 +16,7 @@
     
 }
 .login-row{
-    margin-left: 30px;
-    padding-right: 60px;
+    padding-right: 15px;
 }
 .login-logo{
     padding-top: 30px;
@@ -221,7 +220,7 @@ color: #FFFFFF;
         background: #000000;
     }
     .login-row{
-        margin-left: 0px;
+       
     }
     .login-logo{
         padding-top: 30px;
@@ -231,6 +230,9 @@ color: #FFFFFF;
     .p-do{
         font-size: 17px;  
         } 
+        .login-row{
+            padding-right: 15px;
+        }
 }
 @media only screen and (min-width: 481px) and (max-width:768px) {
     .login{
@@ -282,6 +284,10 @@ color: #FFFFFF;
     .p-do{
         font-size: 17px;  
         } 
+        .login-row{
+            padding-right: 15px;
+        }
+        
 }
 
 
@@ -330,6 +336,9 @@ color: #FFFFFF;
     .p-do{
         font-size: 17px;  
         } 
+        .login-row{
+            padding-right: 20px;
+        }
 }
   
 @media only screen and (min-width: 993px) and (max-width:1024px) {

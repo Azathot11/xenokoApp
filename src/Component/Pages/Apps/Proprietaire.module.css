@@ -109,11 +109,16 @@ font-weight: bold;
 
    
   }
+  .bottom{
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+  }
   .line {
     height: 1px;
     width: 400px;
     background: rgb(201, 201, 201);
-    margin: 0px 0px 1rem 26px;
+    margin: 0px 0px 1rem 0px;
 }
 .CbtnCon{
     display: flex;

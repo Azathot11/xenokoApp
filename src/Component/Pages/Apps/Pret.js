@@ -61,6 +61,11 @@ const Pret = () => {
 useEffect(()=>{
   fetChing()
 },[fetChing])
+
+const handlePageClick =async (event, value) => {
+  console.log(value)
+  // const commentsFormServer = await fetchComments(value);
+};
   //End of fetch logic///////////////////////////////////////////
   
 ///////edit///////////////////////////////////////////////////////////////
@@ -159,7 +164,7 @@ const cancelModalHandler=()=>{
           <Row>
             
             <Col>
-                  <TabLoan loans={Laons} edit={editHandler}  del={ deleteHandler}/>
+                  <TabLoan loans={Laons} edit={editHandler}  del={ deleteHandler} handlePageClick={handlePageClick}/>
             </Col>
           </Row>
         </Container>

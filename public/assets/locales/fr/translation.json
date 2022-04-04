@@ -102,6 +102,9 @@
     "Trevenue": "Total Revenue",
     "Tloans":"Total de pret",
 
+    "day":"Jour",
+    "Yesterday":"Journée d'hier",
+    "headingMonth":"Mois dernier",
     "Filter": "Filtre",
     "All": "Tous",
     "Today": "Aujourd'hui",

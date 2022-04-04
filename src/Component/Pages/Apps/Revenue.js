@@ -291,6 +291,14 @@ const Revenue = () => {
    
 }
 
+const handlePageClick = ()=>{
+
+}
+const handlePageClick2 = ()=>{
+  
+}
+
+
 //delete function/////////////////////////////////////////
 const deleteHandler = (event,c) => {
   event.preventDefault()
@@ -342,10 +350,11 @@ const cancelModalHandler=()=>{
   
   
 ];
+console.log(revenue2)
 
   return (
     <>
-      {modal && (
+     
         <Modal
           close={cancelModalHandler}
           isOpen={modal}
@@ -375,7 +384,7 @@ const cancelModalHandler=()=>{
             </button>
           </div>
         </Modal>
-      )}
+    
       <Modal
         isOpen={modalIsopen}
         onRequestClose={() => setModalIsOpen(false)}
@@ -405,7 +414,7 @@ const cancelModalHandler=()=>{
                 'rgb(255,140,0)',
                 'rgb(255, 205, 86)',
                 '#A5D8E3',
-                'rgb(155, 206, 87)'
+                '#02CF22'
               ]}
               className={styles.modalContentT}
             />
@@ -524,10 +533,10 @@ const cancelModalHandler=()=>{
             </div> */}
               <div className={styles.firstT}>
                 <div className={styles.firstT1}>
-                  <span className={styles.o}></span>
-                  <p>{t("Revenue")}</p>
+                  <span className={styles.o6}></span>
+                  <p>{t("kilometre")}</p>
                 </div>
-                <p>{revenue2.revenue}</p>
+                <p>{revenue2.kilometers}</p>
               </div>
 
               <div className={styles.firstT}>
@@ -658,6 +667,8 @@ const cancelModalHandler=()=>{
                     handleChange3={handleChange3}
                     ssCh={sCh}
                     simm={sIm}
+                    handlePageClick={handlePageClick}
+                    handlePageClick2={handlePageClick2}
                   />
                 </Col>
               )}

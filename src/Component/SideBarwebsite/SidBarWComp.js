@@ -29,10 +29,10 @@ const SideBarW = ({rNav,resNav,profile,infos, callM}) => {
                              icon={<UserOutlined />} 
                              src={'http://xenoko-api.tejiz-dev.de/'+profile
                              }  />
-                         <div className={classes.editIcon}>
+                         {/* <div className={classes.editIcon}>
                             <span className={classes.eye} onClick={callM}><i className="bi bi-pencil-square"></i></span>
                             <span  className={classes.trash}><i className="bi bi-trash"></i></span>
-                        </div>
+                        </div> */}
                         </div>
                         
                         <div>

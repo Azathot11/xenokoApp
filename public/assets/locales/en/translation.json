@@ -101,8 +101,10 @@
   "Tfuel": "Total Fuel",
   "Trevenue": "Total Revenue",
    "Tloans":"Total loans",
-   
-
+    
+   "day":"day",
+  "Yesterday":"Yesterday's day",
+  "headingMonth":"Last month",
   "Filter": "Filter",
   "All": "All",
   "Today": "Today",

@@ -62,6 +62,10 @@ useEffect(()=>{
   fetChing()
 },[fetChing])
   
+const handlePageClick =async (event, value) => {
+  console.log(value)
+  // const commentsFormServer = await fetchComments(value);
+};
    
   //End of fetch logic///////////////////////////////////////////
 
@@ -271,7 +275,8 @@ const closeRevenueHandler=()=>{
            doc={addDocHandler}
            cars={cars} 
            trig={updateCarsHandler} 
-           addRe={addRevenueHandler} /> 
+           addRe={addRevenueHandler} 
+           handlePageClick={handlePageClick}/> 
           
            
           </Col>

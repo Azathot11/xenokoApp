@@ -241,6 +241,14 @@
     background: #02CF22;
     margin-top: 9px;
   }
+  .firstT1 .o6{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: rgb(155, 206, 87);
+    margin-top: 9px;
+  }
+  
   .Modal2{
     position: absolute;
     width:550px;
@@ -321,11 +329,16 @@
 
    
   }
+   .bottom{
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+  }
   .line {
     height: 1px;
     width: 400px;
     background: rgb(201, 201, 201);
-    margin: 0px 0px 1rem 26px;
+    margin: 0px 0px 1rem 0px;
 }
 .CbtnCon{
     display: flex;
@@ -358,4 +371,16 @@
 
 .dateM{
   font-size: 30px;
+}
+@media only screen and (max-width: 564px){
+  .Modal2{
+    width:350px;
+  }
+  .line {
+    height: 1px;
+    width: 300px;
+    background: rgb(201, 201, 201);
+    margin: 0px 0px 1rem 0px;
+}
+  
 }

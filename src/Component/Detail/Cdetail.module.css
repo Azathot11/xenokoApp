@@ -1,5 +1,6 @@
 ._formm{
-    overflow: auto;
+  overflow-y:auto;
+    overflow-x: hidden !important;
     background: black;
     width: 350px;
     height: 100%;

@@ -55,13 +55,14 @@ const Dropdown3 = (props) => {
       });
 
       const data = await res.json();
-      console.log(data);
+      // console.log(data);
     
       const notifNumber =data.notificationCar.length + data.notificationDriver.length;
       const transformedNotificaion = data.notificationDriver.map(notif =>{
         return {
           // DocName:notif.document.name,
-          DocName:notif.document.name,
+
+          DocName:'CNI',
           fname: notif.driver.fname,
           lname:notif.driver.lname,
           expire:notif.expiresIn,
@@ -158,7 +159,7 @@ const Dropdown3 = (props) => {
                 >
                   <Box component="div" align="center" whiteSpace="normal">
                   {Cookies.get('i18next') === 'en'? <p>
-                  The {driver.DocName} of {driver.fname}  {driver.expire < 0  ?  'expired since '  + +  Math.abs(driver.expire)  +  ' days ' :' expires in' +  driver.expire + ' days '}
+                  The {driver.DocName} of {driver.fname}  {driver.expire < 0  ?  'expired since '  +   Math.abs(driver.expire)  +   ' days ' :' expires in' +   driver.expire + ' days '}
                   </p>:<p>
                   La {driver.DocName} de {driver.fname}    {driver.expire < 0  ?  ' a expiré depuis  '  +  Math.abs(driver.expire) + ' jours ' : ' expire dans ' +  driver.expire + ' jours '}
                   </p>}

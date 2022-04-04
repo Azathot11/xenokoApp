@@ -9,7 +9,9 @@ import { useHistory } from "react-router-dom";
 import {Spinner} from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import useWindowDimensions from "../Pages/Bridge/Dimensions";
-const TabVi = ({ trig,  cars, headers ,del,doc, addRe}) => {
+import Pagination from '@mui/material/Pagination';
+import Stack from '@mui/material/Stack';
+const TabVi = ({ trig,  cars, headers ,del,doc, addRe,handlePageClick}) => {
   const {t}= useTranslation();
   const [filter,setFilter]=useState(false)
   const [query,setQuery] = useState('')
@@ -76,10 +78,9 @@ const TabVi = ({ trig,  cars, headers ,del,doc, addRe}) => {
     })
 
   },[ debouncedValue,debouncedValueL,debouncedValueT])
-
-      
-    
-      const handlePageClick = () => {};
+   const handlePageClick2 = (event,value) => {
+     console.log(value)
+   };
     return (
         <>
            <div className={classes.reseting}>
@@ -149,7 +150,12 @@ const TabVi = ({ trig,  cars, headers ,del,doc, addRe}) => {
                     ))}
                 </tbody>}
                 </table>
-                <ReactPaginate
+                {!filter ? <Stack spacing={2} direction="column" alignItems="end" >
+          <Pagination count={10} size="large"  onChange={handlePageClick} />
+        </Stack> :<Stack spacing={2} direction="column" alignItems="end" >
+          <Pagination count={10} size="large"  onChange={handlePageClick2} />
+        </Stack>}
+                {/* <ReactPaginate
                 previousLabel={"previous"}
                 nextLabel={"next"}
                 breakLabel={"..."}
@@ -167,7 +173,7 @@ const TabVi = ({ trig,  cars, headers ,del,doc, addRe}) => {
                 breakClassName={"page-item"}
                 breakLinkClassName={"page-link"}
                 activeClassName={"active"}
-                />
+                /> */}
                 </div>
                 </div> 
         </>

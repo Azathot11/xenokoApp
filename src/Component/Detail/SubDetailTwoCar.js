@@ -7,6 +7,7 @@ import axios from 'axios'
 import Modal from 'react-modal'
 import { useTranslation } from 'react-i18next';
 import { toast } from 'react-toastify';
+import Rmodal from '../UI/Rmodal';
 
 const SubDetailTwoCar = (props) => {
     const {t} =useTranslation()
@@ -19,6 +20,8 @@ const SubDetailTwoCar = (props) => {
     const [price,setPrice]=useState([])
     const [dateEx,setdateEx]=useState([])
     const [modal2,setModal2]=useState(false)
+    const [Pmodal,setPmodal] = useState(false)
+    const [loadpic,setLoadPic] = useState('')
     const [iID,setId]= useState('')
     const loadedPrice= [];
     const loadedDate = [];
@@ -32,10 +35,16 @@ const SubDetailTwoCar = (props) => {
     const notify=()=>{
       toast.success('Succesfull',{autoClose:2000})
    }
+   const loadImageHandler =(value)=>{
+    setPmodal(true)
+     setLoadPic(value)
+
+   }
+ 
 
    let notifId =window.location.pathname.split('/')
    let notifIdSplit= notifId[4]
-   console.log(notifIdSplit)
+  //  console.log(notifIdSplit)
 
    const cId = props.id ||notifIdSplit
     const ViewDataHandler =useCallback(() => {
@@ -111,6 +120,7 @@ const SubDetailTwoCar = (props) => {
       }
     return (
         <>
+         <Rmodal setPmodal={setPmodal} Pmodal={Pmodal} loadpic={loadpic} />
              {modal2 && <Modal close={cancelModalHandler}
           isOpen={modal2}
           onRequestClose={()=> setModal2(false)}
@@ -131,7 +141,7 @@ const SubDetailTwoCar = (props) => {
                    <button  className={classes.btnModal2} onClick={ConfirmDeleteDocHandler}>{t("Submit")}</button>
                  </div>
             </Modal>}
-                <Row className=' mx-0'  >
+                <Row className=' mx-0 pt-2'  >
                     <Col className='d-flex justify-content-center' >
                       <div className={classes.table_wrapperDD}>
                         <table className={classes.contanTT} >
@@ -147,8 +157,8 @@ const SubDetailTwoCar = (props) => {
                       {loading ?<tbody><tr > <td colspan='5' ><Spinner animation="border" variant="secondary" /></td>  </tr></tbody>:<tbody hey={props.id}>
                           {documents.length === 0 ?<tr><td colspan="5" className={classes.Tempty}><h5>{t('result')}</h5></td></tr> : documents.map((x)=>(<tr>
                                 <td>{x.name}</td>
-                                <td scope="col"><img src={'http://xenoko-api.tejiz-dev.de/'+x.frontImage} alt=''/></td>
-                                <td scope="col"><img src={'http://xenoko-api.tejiz-dev.de/'+x.frontImage} alt=''/></td>
+                                <td scope="col" ><img src={'http://xenoko-api.tejiz-dev.de/'+x.frontImage}   style={{cursor:"pointer"}}  onClick={()=>{loadImageHandler(x.frontImage)}} alt=''/></td>
+                                <td scope="col"><img src={'http://xenoko-api.tejiz-dev.de/'+x.frontImage}   style={{cursor:"pointer"}}  onClick={()=>{loadImageHandler(x.backImage)}} alt=''/></td>
                                 {/* <td >8000XAF</td> */}
                                  <td >{ `${new Date(x.expiry).getFullYear()}/${new Date(x.expiry).getMonth()+1}/${new Date(x.expiry).getDate()}`}</td> 
                                  <td onClick={()=>{setId(x._id);setModal2(true)}}><span className={classes.trashish} >

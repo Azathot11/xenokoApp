@@ -8,7 +8,9 @@ import axios from "axios";
 import GlobalFilter from "./GlobalFilter";
 import { useTranslation } from 'react-i18next';
 import useWindowDimensions from '../Pages/Bridge/Dimensions';
-const TabLoan = ({loans,del,edit}) => {
+import Pagination from '@mui/material/Pagination';
+import Stack from '@mui/material/Stack';
+const TabLoan = ({loans,del,edit,handlePageClick}) => {
     const {t} = useTranslation();
     const [filter,setFilter]=useState(false)
     const [query,setQuery] = useState('')
@@ -85,7 +87,7 @@ const TabLoan = ({loans,del,edit}) => {
  
      // ,debouncedValueT
 
-  const handlePageClick = () => {};
+  const handlePageClick2 = () => {};
     return (
         <>
            <div className={classes.resetingL}>
@@ -155,7 +157,12 @@ const TabLoan = ({loans,del,edit}) => {
                     ))}
                 </tbody>}
                 </table>
-                <ReactPaginate
+                {!filter ? <Stack spacing={2} direction="column" alignItems="end" >
+          <Pagination count={10} size="large"  onChange={handlePageClick} />
+        </Stack> :<Stack spacing={2} direction="column" alignItems="end" >
+          <Pagination count={10} size="large"  onChange={handlePageClick2} />
+        </Stack>}
+                {/* <ReactPaginate
                 previousLabel={"previous"}
                 nextLabel={"next"}
                 breakLabel={"..."}
@@ -173,7 +180,7 @@ const TabLoan = ({loans,del,edit}) => {
                 breakClassName={"page-item"}
                 breakLinkClassName={"page-link"}
                 activeClassName={"active"}
-                />
+                /> */}
                 </div>
                 </div> 
         </>

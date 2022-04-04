@@ -27,6 +27,7 @@ const Proprietaire = (props) => {
 
   const [transfer, setTransfer] = useState(null);
   const [owners, setOwners] = useState([]);
+  const [pModal,setPmodal] = useState(true)
   const componentIsMounted = useRef(true)
   const headers = [ t('firstname'), t('Latsname'), t('Telephone'),t('Email'), t('NC'), t('Actions')];
   const AuthCtx = useContext(AuthContext);

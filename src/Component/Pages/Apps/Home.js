@@ -19,7 +19,7 @@ const Home = (props) => {
   const [ranking, setRanking] = useState([])
   const [num, setNum] = useState([])
   const [filter, setFilter] = useState('')
-  const [chooseRev,setChooseRev]= useState(t('month'))
+  const [chooseRev,setChooseRev]= useState(t(''))
   const loadedCost = []
   const loadedDate = []
   const loadedrevenue = []
@@ -36,7 +36,7 @@ const Home = (props) => {
   }
   const fetChing = useCallback(async (infos) => {
 
-    const res = await fetch("http://192.168.100.74:4040/user/home", {
+    const res = await fetch("http://xenoko-api.tejiz-dev.de/user/home", {
       headers: {
         Authorization: "Bearer " + AuthCtx.token,
       },
@@ -241,13 +241,13 @@ const notifNumber=notif;
                              </p>
                           </div>
                           <div>
-                          <select className={styles.selectedH} onClick={(e) => {setChooseRev(e.target.value) }} >      
-                            <option value ='day' >
-                              {" "}{t("yesT")}
+                          <select className={styles.selectedH} onClick={(e) => {setChooseRev(e.target.value) }  } >      
+                            <option selected value ='day' >
+                              {" "}{t("day")}
                             </option>
 
                             <option value='month'>
-                              {" "} {t("LastM")}
+                              {" "} {t("Month")}
                             </option>
                           </select>
                           </div>
